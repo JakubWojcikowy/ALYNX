@@ -1,41 +1,47 @@
 /* ==========================================================================
    ALYNX Engineering — Oficjalny Arkusz Stylów
-   Styl: Klasyczny, Schludny, Przemysłowy (Jasne tło, wysoka czytelność)
-   Wzorowany na strukturze Qualis Konstrukcje
+   Kolorystyka: Przemysłowa zieleń (Forest/Emerald Green) + Odcienie szarości i grafitu
+   Styl: Czysty, przejrzysty, autentyczny warsztatowy (wzorem Qualis Konstrukcje)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 /* --- Zmienne projektowe --- */
 :root {
+  /* Tła */
   --bg-body: #FFFFFF;
   --bg-alt: #F8FAFC;
   --bg-card: #FFFFFF;
   
+  /* Typografia i teksty */
   --text-main: #0F172A;
   --text-muted: #475569;
   --text-light: #64748B;
   
-  --border-color: #E2E8F0;
-  --border-hover: #CBD5E1;
+  /* Odcienie szarości */
+  --gray-border: #E2E8F0;
+  --gray-border-hover: #CBD5E1;
+  --gray-dark: #0F172A;
+  --gray-slate: #1E293B;
   
-  /* Kolor akcentu - solidny przemysłowy błękit */
-  --primary: #0284C7;
-  --primary-hover: #0369A1;
-  --primary-light: #E0F2FE;
-  
-  --navy: #0F172A;
+  /* Odcienie zieleni (przemysłowy, elegancki, solidny) */
+  --primary: #15803D;        /* Forest / Racing Industrial Green */
+  --primary-hover: #166534;  /* Ciemniejsza zieleń przy najechaniu */
+  --primary-dark: #14532D;
+  --primary-light: #DCFCE7; /* Bardzo jasny miętowy/szałwiowy */
+  --primary-subtle: #F0FDF4;/* Tło subtelnych sekcji */
+  --accent-green: #22C55E;  /* Żywsza zieleń na akcenty */
 
-  /* Typografia */
+  /* Czcionka */
   --font-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   
   /* Wymiary i odstępy */
   --container-width: 1200px;
-  --header-height: 80px;
+  --header-height: 95px;    /* Zwiększona wysokość pod powiększone logo */
   --radius: 8px;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.07);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.09);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
   --transition: all 0.2s ease-in-out;
 }
 
@@ -109,13 +115,13 @@ ul {
 }
 
 .top-bar-item a:hover {
-  color: #38BDF8;
+  color: #86EFAC;
 }
 
 .top-bar-item svg {
   width: 15px;
   height: 15px;
-  color: #38BDF8;
+  color: #4ADE80;
 }
 
 /* --- Główny nagłówek (Header) --- */
@@ -124,7 +130,7 @@ ul {
   top: 0;
   z-index: 999;
   background-color: #FFFFFF;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--gray-border);
   box-shadow: var(--shadow-sm);
 }
 
@@ -135,19 +141,20 @@ ul {
   height: var(--header-height);
 }
 
-/* Przycisk Logo z bezpośrednim plikiem */
+/* Przycisk Logo - powiększone i zachowujące 100% proporcje */
 .logo-btn {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  padding: 4px 0;
+  padding: 6px 0;
 }
 
 .logo-btn img {
-  height: 56px;
+  height: 75px; /* Wyraźne, duże logo */
   width: auto;
   max-width: none;
   display: block;
+  object-fit: contain;
 }
 
 /* Menu nawigacyjne - dokładnie 4 sekcje jak w Qualis */
@@ -179,7 +186,7 @@ ul {
   color: #FFFFFF;
   font-size: 0.9rem;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 11px 22px;
   border-radius: var(--radius);
   transition: var(--transition);
 }
@@ -192,7 +199,7 @@ ul {
 .mobile-menu-btn {
   display: none;
   background: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--gray-border);
   border-radius: var(--radius);
   padding: 8px;
   cursor: pointer;
@@ -211,7 +218,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 24px;
+  padding: 13px 26px;
   font-size: 0.95rem;
   font-weight: 600;
   border-radius: var(--radius);
@@ -230,6 +237,17 @@ ul {
   color: #FFFFFF;
 }
 
+.btn-outline-white {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+}
+
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #FFFFFF;
+}
+
 .btn-outline {
   background-color: transparent;
   border-color: #CBD5E1;
@@ -241,15 +259,105 @@ ul {
   border-color: #94A3B8;
 }
 
+/* --- Hero Section (Wzorowana na Qualis - klimatyczny warsztatowy baner) --- */
+.hero {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  background: url('../images/hero/hero-welding.jpg') center center / cover no-repeat;
+  color: #FFFFFF;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(20, 45, 30, 0.82) 100%);
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  padding: 70px 0;
+  max-width: 820px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(220, 252, 231, 0.15);
+  border: 1px solid rgba(220, 252, 231, 0.3);
+  color: #86EFAC;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 4.4vw, 3.4rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.16;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.hero-title span {
+  color: #4ADE80; /* Zielony energetyczny akcent */
+}
+
+.hero-text {
+  font-size: 1.15rem;
+  color: #E2E8F0;
+  line-height: 1.7;
+  margin-bottom: 34px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4ADE80;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 0.82rem;
+  color: #CBD5E1;
+  margin-top: 2px;
+}
+
 /* --- Sekcje wspólne --- */
 .section {
-  padding: 70px 0;
+  padding: 75px 0;
 }
 
 .section-alt {
   background-color: var(--bg-alt);
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--gray-border);
+  border-bottom: 1px solid var(--gray-border);
 }
 
 .section-header {
@@ -270,7 +378,7 @@ ul {
 .section-title {
   font-size: 2.2rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--text-main);
   line-height: 1.25;
   margin-bottom: 14px;
 }
@@ -280,109 +388,17 @@ ul {
   color: var(--text-muted);
 }
 
-/* --- Hero Section --- */
-.hero {
-  padding: 60px 0 70px;
-  background-color: #FFFFFF;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: var(--primary-light);
-  color: var(--primary-hover);
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  margin-bottom: 18px;
-}
-
-.hero-title {
-  font-size: clamp(2rem, 3.8vw, 3rem);
-  font-weight: 800;
-  color: var(--navy);
-  line-height: 1.18;
-  margin-bottom: 20px;
-  letter-spacing: -0.5px;
-}
-
-.hero-title span {
-  color: var(--primary);
-}
-
-.hero-text {
-  font-size: 1.1rem;
-  color: var(--text-muted);
-  line-height: 1.65;
-  margin-bottom: 30px;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 36px;
-}
-
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border-color);
-}
-
-.stat-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.stat-number {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--navy);
-  line-height: 1.2;
-}
-
-.stat-label {
-  font-size: 0.8rem;
-  color: var(--text-light);
-  margin-top: 2px;
-}
-
-.hero-image-wrap {
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  border: 1px solid var(--border-color);
-}
-
-.hero-image-wrap img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-}
-
-/* --- Sekcja Oferta (Karty Usług) --- */
+/* --- Sekcja 1: Oferta --- */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .service-card {
   background-color: #FFFFFF;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--gray-border);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -394,7 +410,7 @@ ul {
 .service-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
-  border-color: var(--border-hover);
+  border-color: #86EFAC;
 }
 
 .service-image {
@@ -423,7 +439,7 @@ ul {
 .service-title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--text-main);
   margin-bottom: 10px;
 }
 
@@ -436,7 +452,7 @@ ul {
 
 .service-list {
   margin-top: auto;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--gray-border);
   padding-top: 14px;
   display: flex;
   flex-direction: column;
@@ -458,12 +474,12 @@ ul {
   flex-shrink: 0;
 }
 
-/* Wyróżnik: Baner Stołów 3D w Ofercie */
+/* Baner Stołów 3D w sekcji Oferta */
 .tables-banner {
-  background-color: #F0F9FF;
-  border: 1px solid #BAE6FD;
+  background-color: var(--primary-subtle);
+  border: 1px solid #BBF7D0;
   border-radius: var(--radius);
-  padding: 32px;
+  padding: 34px;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 32px;
@@ -473,14 +489,14 @@ ul {
 .tables-banner h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--text-main);
   margin-bottom: 12px;
 }
 
 .tables-banner p {
   color: var(--text-muted);
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.65;
   margin-bottom: 20px;
 }
 
@@ -497,13 +513,14 @@ ul {
   border: 1px solid #CBD5E1;
   font-weight: 600;
   font-size: 0.88rem;
-  color: var(--navy);
+  color: var(--text-main);
 }
 
 .tables-banner-img {
   border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid #BAE6FD;
+  border: 1px solid #BBF7D0;
+  box-shadow: var(--shadow-sm);
 }
 
 .tables-banner-img img {
@@ -512,7 +529,7 @@ ul {
   object-fit: cover;
 }
 
-/* --- Sekcja Realizacje (Galeria) --- */
+/* --- Sekcja 2: Realizacje (Galeria) --- */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -521,7 +538,7 @@ ul {
 
 .gallery-item {
   background-color: #FFFFFF;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--gray-border);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -531,6 +548,7 @@ ul {
 .gallery-item:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
+  border-color: #86EFAC;
 }
 
 .gallery-img-wrap {
@@ -551,7 +569,7 @@ ul {
 .gallery-title {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--text-main);
   margin-bottom: 4px;
 }
 
@@ -560,7 +578,7 @@ ul {
   color: var(--text-light);
 }
 
-/* --- Sekcja O nas --- */
+/* --- Sekcja 3: O nas --- */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -571,7 +589,7 @@ ul {
 .about-text h3 {
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--text-main);
   margin-bottom: 16px;
 }
 
@@ -584,7 +602,7 @@ ul {
 
 .about-card-box {
   background-color: #FFFFFF;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--gray-border);
   border-radius: var(--radius);
   padding: 32px;
   box-shadow: var(--shadow-sm);
@@ -593,10 +611,10 @@ ul {
 .about-card-box h4 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--text-main);
   margin-bottom: 20px;
   padding-bottom: 12px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--gray-border);
 }
 
 .company-data-row {
@@ -615,10 +633,10 @@ ul {
 .company-data-value {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--text-main);
 }
 
-/* --- Sekcja Kontakt --- */
+/* --- Sekcja 4: Kontakt --- */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -627,7 +645,7 @@ ul {
 
 .contact-card {
   background-color: #FFFFFF;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--gray-border);
   border-radius: var(--radius);
   padding: 36px;
   box-shadow: var(--shadow-sm);
@@ -636,7 +654,7 @@ ul {
 .contact-card h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--text-main);
   margin-bottom: 12px;
 }
 
@@ -687,7 +705,7 @@ ul {
 .contact-value {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--text-main);
 }
 
 .contact-value a:hover {
@@ -696,7 +714,7 @@ ul {
 
 .form-card {
   background-color: #FFFFFF;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--gray-border);
   border-radius: var(--radius);
   padding: 36px;
   box-shadow: var(--shadow-sm);
@@ -705,7 +723,7 @@ ul {
 .form-card h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--text-main);
   margin-bottom: 8px;
 }
 
@@ -730,10 +748,10 @@ ul {
 .form-input, .form-textarea, .form-select {
   width: 100%;
   padding: 12px 14px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--gray-border);
   border-radius: var(--radius);
   font-size: 0.95rem;
-  color: var(--navy);
+  color: var(--text-main);
   background-color: #FFFFFF;
   transition: var(--transition);
 }
@@ -741,7 +759,7 @@ ul {
 .form-input:focus, .form-textarea:focus, .form-select:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+  box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.15);
 }
 
 .form-textarea {
@@ -755,13 +773,13 @@ ul {
   gap: 16px;
 }
 
-/* --- Stopka --- */
+/* --- Stopka (Footer) --- */
 .site-footer {
   background-color: #F8FAFC;
   color: #475569;
   padding: 50px 0 24px;
   font-size: 0.9rem;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--gray-border);
 }
 
 .footer-grid {
@@ -772,7 +790,7 @@ ul {
 }
 
 .footer-logo {
-  height: 50px;
+  height: 65px;
   width: auto;
   margin-bottom: 14px;
 }
@@ -784,7 +802,7 @@ ul {
 }
 
 .footer-col-title {
-  color: var(--navy);
+  color: var(--text-main);
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 14px;
@@ -802,7 +820,7 @@ ul {
 
 .footer-bottom {
   padding-top: 20px;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--gray-border);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -814,11 +832,8 @@ ul {
 
 /* --- Responsywność --- */
 @media (max-width: 992px) {
-  .hero-grid, .tables-banner, .about-grid, .contact-grid {
+  .tables-banner, .about-grid, .contact-grid {
     grid-template-columns: 1fr;
-  }
-  .hero-image-wrap img {
-    height: 340px;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
@@ -844,7 +859,7 @@ ul {
     flex-direction: column;
     align-items: stretch;
     padding: 16px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--gray-border);
     box-shadow: var(--shadow-md);
     transform: translateY(-120%);
     opacity: 0;
