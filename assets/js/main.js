@@ -1,5 +1,5 @@
 /**
- * ALYNX Engineering Sp. z o.o. — Główny skrypt JavaScript
+ * ALYNX Engineering — Główny skrypt JavaScript
  * Prosty, lekki, bez zewnętrznych bibliotek (Vanilla JS)
  */
 

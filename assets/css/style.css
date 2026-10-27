@@ -1,14 +1,13 @@
 /* ==========================================================================
-   ALYNX Engineering Sp. z o.o. — Oficjalny Arkusz Stylów
+   ALYNX Engineering — Oficjalny Arkusz Stylów
    Styl: Klasyczny, Schludny, Przemysłowy (Jasne tło, wysoka czytelność)
-   Wzorowany na solidnych polskich stronach przemysłowych (Qualis, Karnatech)
+   Wzorowany na strukturze Qualis Konstrukcje
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* --- Zmienne projektowe --- */
 :root {
-  /* Kolory bazowe */
   --bg-body: #FFFFFF;
   --bg-alt: #F8FAFC;
   --bg-card: #FFFFFF;
@@ -20,13 +19,12 @@
   --border-color: #E2E8F0;
   --border-hover: #CBD5E1;
   
-  /* Kolory akcentu (spokojny, przemysłowy błękit / granat) */
+  /* Kolor akcentu - solidny przemysłowy błękit */
   --primary: #0284C7;
   --primary-hover: #0369A1;
   --primary-light: #E0F2FE;
   
   --navy: #0F172A;
-  --amber: #D97706;
 
   /* Typografia */
   --font-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -35,9 +33,9 @@
   --container-width: 1200px;
   --header-height: 80px;
   --radius: 8px;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.09);
   --transition: all 0.2s ease-in-out;
 }
 
@@ -86,7 +84,7 @@ ul {
   padding-right: 20px;
 }
 
-/* --- Górny pasek informacyjny (Top Bar) --- */
+/* --- Górny pasek (Top Bar) --- */
 .top-bar {
   background-color: #0F172A;
   color: #94A3B8;
@@ -120,16 +118,7 @@ ul {
   color: #38BDF8;
 }
 
-.top-bar-badge {
-  background-color: rgba(56, 189, 248, 0.15);
-  color: #38BDF8;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 0.78rem;
-}
-
-/* --- Główny pasek nawigacji (Header) --- */
+/* --- Główny nagłówek (Header) --- */
 .site-header {
   position: sticky;
   top: 0;
@@ -146,29 +135,30 @@ ul {
   height: var(--header-height);
 }
 
-/* Logo firmy */
-.logo-link {
-  display: flex;
+/* Przycisk Logo z bezpośrednim plikiem */
+.logo-btn {
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
+  padding: 4px 0;
 }
 
-.site-logo {
-  height: 52px;
+.logo-btn img {
+  height: 56px;
   width: auto;
+  max-width: none;
   display: block;
-  object-fit: contain;
 }
 
-/* Menu nawigacyjne */
+/* Menu nawigacyjne - dokładnie 4 sekcje jak w Qualis */
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .nav-link {
-  padding: 10px 16px;
+  padding: 10px 18px;
   font-size: 0.95rem;
   font-weight: 500;
   color: #334155;
@@ -251,7 +241,7 @@ ul {
   border-color: #94A3B8;
 }
 
-/* --- Sekcje - Wspólne style --- */
+/* --- Sekcje wspólne --- */
 .section {
   padding: 70px 0;
 }
@@ -265,7 +255,7 @@ ul {
 .section-header {
   text-align: center;
   max-width: 720px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 48px auto;
 }
 
 .section-kicker {
@@ -290,7 +280,7 @@ ul {
   color: var(--text-muted);
 }
 
-/* --- Hero Section (Czysty, elegancki, przemysłowy) --- */
+/* --- Hero Section --- */
 .hero {
   padding: 60px 0 70px;
   background-color: #FFFFFF;
@@ -357,7 +347,7 @@ ul {
 }
 
 .stat-number {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--navy);
   line-height: 1.2;
@@ -382,69 +372,12 @@ ul {
   object-fit: cover;
 }
 
-/* --- Sekcja O nas (Prosta, rzeczowa) --- */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-}
-
-.about-text h3 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 16px;
-}
-
-.about-text p {
-  color: var(--text-muted);
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 16px;
-}
-
-.about-card-box {
-  background-color: #FFFFFF;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius);
-  padding: 32px;
-  box-shadow: var(--shadow-sm);
-}
-
-.about-card-box h4 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.company-data-row {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 14px;
-}
-
-.company-data-label {
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  color: var(--text-light);
-  font-weight: 600;
-}
-
-.company-data-value {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--navy);
-}
-
-/* --- Sekcja Oferta (Schludne kafelki) --- */
+/* --- Sekcja Oferta (Karty Usług) --- */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 24px;
+  margin-bottom: 40px;
 }
 
 .service-card {
@@ -525,142 +458,61 @@ ul {
   flex-shrink: 0;
 }
 
-/* --- Sekcja Stoły Spawalnicze 3D (Wyróżnik warsztatu) --- */
-.tables-layout {
+/* Wyróżnik: Baner Stołów 3D w Ofercie */
+.tables-banner {
+  background-color: #F0F9FF;
+  border: 1px solid #BAE6FD;
+  border-radius: var(--radius);
+  padding: 32px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
   align-items: center;
 }
 
-.tables-content h3 {
-  font-size: 1.8rem;
+.tables-banner h3 {
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--navy);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
-.tables-content p {
+.tables-banner p {
   color: var(--text-muted);
-  font-size: 1rem;
-  line-height: 1.65;
-  margin-bottom: 24px;
-}
-
-.table-features {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-bottom: 28px;
-}
-
-.table-feature-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.table-feature-item svg {
-  width: 20px;
-  height: 20px;
-  color: var(--primary);
-  margin-top: 2px;
-  flex-shrink: 0;
-}
-
-.table-feature-text strong {
-  display: block;
   font-size: 0.95rem;
-  color: var(--navy);
-}
-
-.table-feature-text span {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-}
-
-.tables-sizes-box {
-  background-color: var(--primary-light);
-  border: 1px solid #BAE6FD;
-  border-radius: var(--radius);
-  padding: 16px 20px;
-}
-
-.tables-sizes-title {
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--primary-hover);
-  margin-bottom: 8px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .tables-sizes-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--navy);
+  gap: 10px;
 }
 
 .tables-sizes-badge {
   background-color: #FFFFFF;
-  padding: 4px 12px;
+  padding: 6px 14px;
   border-radius: 4px;
   border: 1px solid #CBD5E1;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--navy);
 }
 
-.tables-image-wrap {
+.tables-banner-img {
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--border-color);
+  border: 1px solid #BAE6FD;
 }
 
-.tables-image-wrap img {
+.tables-banner-img img {
   width: 100%;
-  height: 380px;
+  height: 220px;
   object-fit: cover;
 }
 
-/* --- Sekcja Proces (Krok po kroku) --- */
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.step-card {
-  background-color: #FFFFFF;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius);
-  padding: 24px 20px;
-  box-shadow: var(--shadow-sm);
-  position: relative;
-}
-
-.step-number {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: var(--primary);
-  line-height: 1;
-  margin-bottom: 12px;
-}
-
-.step-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 8px;
-}
-
-.step-desc {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  line-height: 1.55;
-}
-
-/* --- Sekcja Realizacje (Galeria zdjęć) --- */
+/* --- Sekcja Realizacje (Galeria) --- */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -708,7 +560,65 @@ ul {
   color: var(--text-light);
 }
 
-/* --- Sekcja Kontakt (Dane + Formularz) --- */
+/* --- Sekcja O nas --- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.about-card-box {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.about-card-box h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.company-data-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.company-data-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.company-data-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* --- Sekcja Kontakt --- */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -784,7 +694,6 @@ ul {
   color: var(--primary);
 }
 
-/* Formularz kontaktowy */
 .form-card {
   background-color: #FFFFFF;
   border: 1px solid var(--border-color);
@@ -846,79 +755,70 @@ ul {
   gap: 16px;
 }
 
-/* --- Stopka (Footer) --- */
+/* --- Stopka --- */
 .site-footer {
-  background-color: #0F172A;
-  color: #94A3B8;
-  padding: 60px 0 24px;
+  background-color: #F8FAFC;
+  color: #475569;
+  padding: 50px 0 24px;
   font-size: 0.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--border-color);
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
   gap: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .footer-logo {
-  height: 46px;
+  height: 50px;
   width: auto;
-  margin-bottom: 16px;
-  filter: brightness(0) invert(1); /* w ciemnej stopce logo jest białe */
+  margin-bottom: 14px;
 }
 
 .footer-about {
   font-size: 0.88rem;
   line-height: 1.6;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .footer-col-title {
-  color: #FFFFFF;
+  color: var(--navy);
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .footer-links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.footer-links a {
-  color: #94A3B8;
+  gap: 8px;
 }
 
 .footer-links a:hover {
-  color: #FFFFFF;
-  padding-left: 4px;
+  color: var(--primary);
 }
 
 .footer-bottom {
-  padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
   font-size: 0.82rem;
-  color: #64748B;
+  color: var(--text-light);
 }
 
-/* --- Responsywność (RWD) --- */
+/* --- Responsywność --- */
 @media (max-width: 992px) {
-  .hero-grid {
+  .hero-grid, .tables-banner, .about-grid, .contact-grid {
     grid-template-columns: 1fr;
   }
   .hero-image-wrap img {
     height: 340px;
-  }
-  .about-grid, .tables-layout, .contact-grid {
-    grid-template-columns: 1fr;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
@@ -965,7 +865,7 @@ ul {
   }
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 24px;
   }
   .footer-bottom {
     flex-direction: column;

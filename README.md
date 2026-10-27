@@ -1,4 +1,4 @@
-# ALYNX Engineering Sp. z o.o. — Oficjalny Serwis Firmowy
+# ALYNX Engineering — Oficjalny Serwis Firmowy
 
 [![Status: In Development](https://img.shields.io/badge/status-in--development-yellow.svg)](https://github.com/)
 [![Stack: HTML5 / CSS3 / Vanilla JS](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20ES6%2B-blue.svg)](https://developer.mozilla.org/)
@@ -6,19 +6,19 @@
 [![Design: Industrial High-Tech](https://img.shields.io/badge/design-Industrial%20High--Tech-orange.svg)]()
 [![Responsive: Mobile First](https://img.shields.io/badge/responsive-mobile--first-brightgreen.svg)]()
 
-> Nowoczesna, wysoce responsywna i lekka strona internetowa dla firmy **ALYNX Engineering Sp. z o.o.** ze Stalowej Woli. Projekt zoptymalizowany pod kątem szybkości ładowania (PageSpeed 95+), bezpośredniej konwersji zapytań ofertowych B2B oraz bezproblemowego wdrożenia na klasycznym hostingu współdzielonym (**Hostido / cPanel / DirectAdmin**).
+> Nowoczesna, wysoce responsywna i lekka strona internetowa dla firmy **ALYNX Engineering** ze Stalowej Woli. Projekt zoptymalizowany pod kątem szybkości ładowania (PageSpeed 95+), bezpośredniej konwersji zapytań ofertowych B2B oraz bezproblemowego wdrożenia na klasycznym hostingu współdzielonym (**Hostido / cPanel / DirectAdmin**).
 
 ---
 
 ## 🏭 O firmie ALYNX Engineering
 
-**ALYNX Engineering Sp. z o.o.** to przedsiębiorstwo inżynieryjno-produkcyjne zlokalizowane w sercu Centralnego Okręgu Przemysłowego (COP) w Stalowej Woli. Firma specjalizuje się w:
+**ALYNX Engineering** to przedsiębiorstwo inżynieryjno-produkcyjne zlokalizowane w sercu Centralnego Okręgu Przemysłowego (COP) w Stalowej Woli. Firma specjalizuje się w:
 * **Precyzyjnym spawaniu konstrukcji stalowych** (MIG/MAG, TIG — stal czarna, stale nierdzewne, stopy aluminium),
 * **Projektowaniu inżynierskim i modelowaniu 3D CAD/CAM** (od koncepcji, przez optymalizację DFM, po dokumentację wykonawczą),
 * **Zaawansowanym montażu spawalniczym na modułowych stołach 3D** (System 28 / siatka otworów $100 \times 100$ mm), pozwalającym na realizację zarówno precyzyjnych detali, jak i wielkogabarytowych ram do 6 metrów długości z zachowaniem idealnych kątów i tolerancji.
 
 ### Dane rejestrowe i kontaktowe
-* **Firma:** ALYNX Engineering Sp. z o.o.
+* **Firma:** ALYNX Engineering
 * **Osoba zarządzająca:** Sebastian Ajryś
 * **Adres:** ul. Zdzisława Malickiego 118, 37-450 Stalowa Wola
 * **NIP:** 8652594538
@@ -121,4 +121,4 @@ python -m http.server 3000
 ```
 
 ---
-*Copyright © 2026 ALYNX Engineering Sp. z o.o. Wszelkie prawa zastrzeżone.*
+*Copyright © 2026 ALYNX Engineering Wszelkie prawa zastrzeżone.*
