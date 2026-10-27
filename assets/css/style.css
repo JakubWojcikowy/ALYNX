@@ -115,13 +115,13 @@ ul {
 }
 
 .top-bar-item a:hover {
-  color: #86EFAC;
+  color: #FFFFFF;
 }
 
 .top-bar-item svg {
   width: 15px;
   height: 15px;
-  color: #4ADE80;
+  color: #94A3B8;
 }
 
 /* --- Główny nagłówek (Header) --- */
@@ -307,7 +307,7 @@ ul {
 }
 
 .hero-title span {
-  color: #4ADE80;
+  color: #FFFFFF;
 }
 
 .hero-text {
@@ -340,7 +340,7 @@ ul {
 .stat-number {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #4ADE80;
+  color: #FFFFFF;
   line-height: 1.2;
 }
 
@@ -368,7 +368,7 @@ ul {
 }
 
 .breadcrumbs a {
-  color: #86EFAC;
+  color: #CBD5E1;
 }
 
 .breadcrumbs a:hover {
@@ -384,7 +384,7 @@ ul {
 }
 
 .page-hero-title span {
-  color: #4ADE80;
+  color: #FFFFFF;
 }
 
 .page-hero-desc {
