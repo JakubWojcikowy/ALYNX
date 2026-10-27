@@ -37,7 +37,7 @@
   
   /* Wymiary i odstępy */
   --container-width: 1200px;
-  --header-height: 95px;    /* Zwiększona wysokość pod powiększone logo */
+  --header-height: 95px;    /* Wysokość nagłówka pod duże, czytelne logo */
   --radius: 8px;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
@@ -141,23 +141,23 @@ ul {
   height: var(--header-height);
 }
 
-/* Przycisk Logo - powiększone i zachowujące 100% proporcje */
+/* Przycisk Logo - 2x większe, ostre i naturalne */
 .logo-btn {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  padding: 6px 0;
+  padding: 4px 0;
 }
 
 .logo-btn img {
-  height: 75px; /* Wyraźne, duże logo */
+  height: 64px; /* Realnie 2.5x większe litery niż wcześniej */
   width: auto;
   max-width: none;
   display: block;
   object-fit: contain;
 }
 
-/* Menu nawigacyjne - dokładnie 4 sekcje jak w Qualis */
+/* Menu nawigacyjne - 4 sekcje / podstrony jak w Qualis */
 .nav-menu {
   display: flex;
   align-items: center;
@@ -176,6 +176,7 @@ ul {
 .nav-link:hover, .nav-link.active {
   color: var(--primary);
   background-color: var(--primary-light);
+  font-weight: 600;
 }
 
 .header-cta-btn {
@@ -259,7 +260,7 @@ ul {
   border-color: #94A3B8;
 }
 
-/* --- Hero Section (Wzorowana na Qualis - klimatyczny warsztatowy baner) --- */
+/* --- Hero Section Główna (Wzorem Qualis - klimatyczny warsztatowy baner) --- */
 .hero {
   position: relative;
   min-height: 520px;
@@ -306,7 +307,7 @@ ul {
 }
 
 .hero-title span {
-  color: #4ADE80; /* Zielony energetyczny akcent */
+  color: #4ADE80;
 }
 
 .hero-text {
@@ -347,6 +348,50 @@ ul {
   font-size: 0.82rem;
   color: #CBD5E1;
   margin-top: 2px;
+}
+
+/* --- Hero Podstron (Subpage Hero Banner) --- */
+.page-hero {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 50px 0 45px;
+  border-bottom: 1px solid var(--gray-border);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #94A3B8;
+  margin-bottom: 14px;
+}
+
+.breadcrumbs a {
+  color: #86EFAC;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.page-hero-title {
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.page-hero-title span {
+  color: #4ADE80;
+}
+
+.page-hero-desc {
+  font-size: 1.05rem;
+  color: #CBD5E1;
+  max-width: 720px;
+  line-height: 1.6;
 }
 
 /* --- Sekcje wspólne --- */
@@ -529,6 +574,41 @@ ul {
   object-fit: cover;
 }
 
+/* Rozwinięte bloki ofertowe dla podstrony oferta.html */
+.offer-detail-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--gray-border);
+}
+
+.offer-detail-block:last-child {
+  border-bottom: none;
+}
+
+.offer-detail-block.reverse {
+  direction: rtl;
+}
+
+.offer-detail-block.reverse > * {
+  direction: ltr;
+}
+
+.offer-detail-img {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--gray-border);
+  box-shadow: var(--shadow-md);
+}
+
+.offer-detail-img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
 /* --- Sekcja 2: Realizacje (Galeria) --- */
 .gallery-grid {
   display: grid;
@@ -552,7 +632,7 @@ ul {
 }
 
 .gallery-img-wrap {
-  height: 220px;
+  height: 230px;
   overflow: hidden;
 }
 
@@ -790,7 +870,7 @@ ul {
 }
 
 .footer-logo {
-  height: 65px;
+  height: 60px;
   width: auto;
   margin-bottom: 14px;
 }
@@ -832,8 +912,11 @@ ul {
 
 /* --- Responsywność --- */
 @media (max-width: 992px) {
-  .tables-banner, .about-grid, .contact-grid {
+  .tables-banner, .about-grid, .contact-grid, .offer-detail-block {
     grid-template-columns: 1fr;
+  }
+  .offer-detail-block.reverse {
+    direction: ltr;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
