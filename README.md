@@ -11,7 +11,7 @@
 
 ## 🏭 O firmie ALYNX Engineering
 
-**ALYNX Engineering** to nowoczesna firma inżynieryjno-produkcyjna zlokalizowana w samym sercu strefy przemysłowej w Stalowej Woli. Zakład specjalizuje się w projektowaniu oraz wytwarzaniu skomplikowanych konstrukcji stalowych, kompletnych linii produkcyjnych, części maszyn oraz oprzyrządowania dla przemysłu kolejowego, energetycznego, offshore, zbrojeniowego, budowlanego i spożywczego.
+**ALYNX Engineering Sp. z o.o.** to nowoczesna firma inżynieryjno-produkcyjna zlokalizowana w samym sercu strefy przemysłowej w Stalowej Woli. Zakład specjalizuje się w projektowaniu oraz wytwarzaniu skomplikowanych konstrukcji stalowych, kompletnych linii produkcyjnych, części maszyn oraz oprzyrządowania dla przemysłu kolejowego, energetycznego, offshore, zbrojeniowego, budowlanego i spożywczego.
 
 ### Główne obszary działalności
 * **Spawanie i produkcja specjalistycznych konstrukcji stalowych (MIG/MAG & TIG)** — stal węglowa, nierdzewna oraz kwasoodporna; praca na hali z dwiema suwnicami 5t i profesjonalnych stołach spawalniczych.
@@ -21,7 +21,7 @@
 * **Kontrola jakości i wysokie standardy produkcyjne** — staranne przygotowanie materiału, kontrola spoin, weryfikacja wymiarowa na stołach i po CNC, pomiary grubości powłok oraz identyfikowalność (atesty 3.1).
 
 ### Dane rejestrowe i kontaktowe
-* **Firma:** ALYNX Engineering
+* **Firma:** ALYNX Engineering Sp. z o.o.
 * **Osoba kontaktowa:** Sebastian Ajryś
 * **Adres:** ul. Zdzisława Malickiego 118, 37-450 Stalowa Wola
 * **NIP:** 8652594538
@@ -50,7 +50,7 @@ ALYNX/
         ├── favicon.png          # Ikona karty przeglądarki
         ├── hero/                # Tło sekcji powitalnej
         ├── services/            # Zdjęcia ilustrujące poszczególne obszary oferty
-        └── tables/              # Zdjęcie zaplecza hali produkcyjnej
+        └── tables/              # Schemat techniczny zaplecza produkcyjnego (SVG)
 ```
 
 ---
@@ -74,4 +74,4 @@ ALYNX/
 * **Typografia:** *Inter*.
 
 ---
-*Copyright © 2026 ALYNX Engineering. Wszelkie prawa zastrzeżone.*
+*Copyright © 2026 ALYNX Engineering Sp. z o.o. Wszelkie prawa zastrzeżone.*

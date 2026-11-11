@@ -593,12 +593,14 @@ ul {
   overflow: hidden;
   border: 1px solid #BBF7D0;
   box-shadow: var(--shadow-sm);
+  background-color: #0F172A;
 }
 
 .tables-banner-img img {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: 640 / 400;
+  object-fit: contain;
   display: block;
 }
 
@@ -1272,7 +1274,7 @@ ul {
   }
 
   .tables-banner-img img {
-    height: 200px;
+    height: auto;
   }
 
   /* Bloki szczegółów w oferta.html */
