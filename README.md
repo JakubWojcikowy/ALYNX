@@ -1,25 +1,28 @@
 # ALYNX Engineering — Oficjalny Serwis Firmowy
 
-[![Status: In Development](https://img.shields.io/badge/status-in--development-yellow.svg)](https://github.com/)
+[![Status: Production Ready](https://img.shields.io/badge/status-production--ready-brightgreen.svg)](https://github.com/)
 [![Stack: HTML5 / CSS3 / Vanilla JS](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20ES6%2B-blue.svg)](https://developer.mozilla.org/)
-[![Hosting: Hostido / Static](https://img.shields.io/badge/hosting-Hostido%20%2F%20cPanel%20Ready-green.svg)](https://hostido.pl/)
-[![Design: Industrial High-Tech](https://img.shields.io/badge/design-Industrial%20High--Tech-orange.svg)]()
+[![Hosting: Hostido / Static](https://img.shields.io/badge/hosting-Hostido%20%2F%20DirectAdmin%20Ready-green.svg)](https://hostido.pl/)
 [![Responsive: Mobile First](https://img.shields.io/badge/responsive-mobile--first-brightgreen.svg)]()
 
-> Nowoczesna, wysoce responsywna i lekka strona internetowa dla firmy **ALYNX Engineering** ze Stalowej Woli. Projekt zoptymalizowany pod kątem szybkości ładowania (PageSpeed 95+), bezpośredniej konwersji zapytań ofertowych B2B oraz bezproblemowego wdrożenia na klasycznym hostingu współdzielonym (**Hostido / cPanel / DirectAdmin**).
+> Przejrzysta, lekka i wysoce responsywna strona firmowa dla **ALYNX Engineering** ze Stalowej Woli. Zaprojektowana w architekturze statycznej **Zero-Dependency**, zoptymalizowana pod urządzenia mobilne oraz bezpośrednie wdrożenie na hostingu **Hostido** bez dodatkowych narzędzi budujących.
 
 ---
 
 ## 🏭 O firmie ALYNX Engineering
 
-**ALYNX Engineering** to przedsiębiorstwo inżynieryjno-produkcyjne zlokalizowane w sercu Centralnego Okręgu Przemysłowego (COP) w Stalowej Woli. Firma specjalizuje się w:
-* **Precyzyjnym spawaniu konstrukcji stalowych** (MIG/MAG, TIG — stal czarna, stale nierdzewne, stopy aluminium),
-* **Projektowaniu inżynierskim i modelowaniu 3D CAD/CAM** (od koncepcji, przez optymalizację DFM, po dokumentację wykonawczą),
-* **Zaawansowanym montażu spawalniczym na modułowych stołach 3D** (System 28 / siatka otworów $100 \times 100$ mm), pozwalającym na realizację zarówno precyzyjnych detali, jak i wielkogabarytowych ram do 6 metrów długości z zachowaniem idealnych kątów i tolerancji.
+**ALYNX Engineering** to nowoczesna firma inżynieryjno-produkcyjna zlokalizowana w samym sercu strefy przemysłowej w Stalowej Woli. Zakład specjalizuje się w projektowaniu oraz wytwarzaniu skomplikowanych konstrukcji stalowych, kompletnych linii produkcyjnych, części maszyn oraz oprzyrządowania dla przemysłu kolejowego, energetycznego, offshore, zbrojeniowego, budowlanego i spożywczego.
+
+### Główne obszary działalności
+* **Spawanie i produkcja specjalistycznych konstrukcji stalowych (MIG/MAG & TIG)** — stal węglowa, nierdzewna oraz kwasoodporna; praca na hali z dwiema suwnicami 5t i profesjonalnych stołach spawalniczych.
+* **Hydrodynamiczne malowanie natryskowe i przygotowanie powierzchni** — własne automatyczne i ręczne śrutownie oraz wydajna malarnia przemysłowa (powłoki epoksydowe, poliuretanowe, cynkowe).
+* **Wielkogabarytowa obróbka CNC i precyzyjne cięcie blach** — kompleksowa koordynacja frezowania, toczenia, wytaczania CNC oraz cięcia laserowego i plazmowo-tlenowego we współpracy ze sprawdzoną siecią podwykonawców.
+* **Projektowanie CAD, dokumentacja techniczna i nadzór inżynieryjny** — własne biuro projektowo-technologiczne (modele 3D CAD, dokumentacja 2D, inżynieria odwrotna i optymalizacja kosztów).
+* **Kontrola jakości i wysokie standardy produkcyjne** — staranne przygotowanie materiału, kontrola spoin, weryfikacja wymiarowa na stołach i po CNC, pomiary grubości powłok oraz identyfikowalność (atesty 3.1).
 
 ### Dane rejestrowe i kontaktowe
 * **Firma:** ALYNX Engineering
-* **Osoba zarządzająca:** Sebastian Ajryś
+* **Osoba kontaktowa:** Sebastian Ajryś
 * **Adres:** ul. Zdzisława Malickiego 118, 37-450 Stalowa Wola
 * **NIP:** 8652594538
 * **Telefon:** [+48 881 424 247](tel:+48881424247)
@@ -27,98 +30,48 @@
 
 ---
 
-## 📐 Kluczowe Moduły i Funkcjonalności
-
-1. **Top Bar & Sticky Navigation**:
-   * Szybki kontakt bezpośredni (telefon, e-mail, lokalizacja),
-   * Klikalne, responsywne logo z dynamicznym powrotem na górę strony,
-   * Przejrzyste menu sekcji z przyciskiem szybkiej wyceny (*Call To Action*).
-2. **Hero Section (Strefa Wprowadzająca)**:
-   * Wyraziste hasło technologiczne,
-   * Kluczowe wskaźniki inżynierskie (tolerancje wymiarowe, czas analizy DFM, powtarzalność),
-   * Bezpośrednie punkty wejścia do oferty i formularza zapytania.
-3. **Prezentacja Możliwości Technologicznych (Stoły Spawalnicze 3D)**:
-   * Dedykowany moduł prezentujący zaplecze spawalnicze w oparciu o modułowe stoły 3D (System 28),
-   * Specyfikacja wymiarów bazowych ($3000 \times 1500$ mm, $2400 \times 1200$ mm) z możliwością łączenia w pole robocze $6000 \times 3000$ mm,
-   * Wyjaśnienie korzyści dla klienta: eliminacja odkształceń spawalniczych, wysoka powtarzalność seryjna, idealne kąty $90^\circ$.
-4. **Katalog Usług**:
-   * Spawanie konstrukcji stalowych i ram maszynowych,
-   * Modelowanie 3D i dokumentacja CAD/CAM,
-   * Montaż i przygotowanie podzespołów,
-   * Kontrola jakości i badania wizualne spoin (VT).
-5. **Ścieżka Realizacji Krok po Kroku**:
-   * 5-etapowy proces B2B: *Zapytanie i pliki CAD &rarr; Wycena &rarr; Ustawienie na stołach 3D &rarr; Spawanie &rarr; Kontrola CMM/VT &rarr; Dostawa*.
-6. **Portfolio / Galeria Realizacji**:
-   * Nowoczesna siatka projektów z filtrowaniem wg kategorii i łatwym systemem podmiany zdjęć.
-7. **Formularz Wyceny / RFP & Kontakt**:
-   * Interaktywny formularz zapytania ofertowego ze specyfikacją zlecenia i opcją dołączenia plików technicznych (STEP, DXF, PDF).
-
----
-
 ## 📁 Architektura Plików
-
-Projekt został zaprojektowany w architekturze **Zero-Dependency Static Web** — nie wymaga instalacji Node.js, kompilatorów ani baz danych na serwerze docelowym.
 
 ```text
 ALYNX/
-├── index.html                   # Główna strona aplikacji (semantyczny HTML5)
-├── README.md                    # Dokumentacja techniczna i opis projektu
-├── .gitignore                   # Reguły wykluczeń dla systemu kontroli wersji Git
-├── .gitattributes               # Konfiguracja obsługi końców linii w Git
-├── Obszar roboczy 1.png          # Oryginalny plik logo projektu
-│
+├── index.html                   # Strona główna
+├── oferta.html                  # Szczegółowa oferta usług (5 filarów)
+├── realizacje.html              # Podstrona Realizacje (w trakcie przygotowania zdjęć)
+├── o-nas.html                   # Profil firmy, zaplecze i atuty współpracy
+├── kontakt.html                 # Dane kontaktowe i formularz wyceny
+├── README.md                    # Dokumentacja projektu
 └── assets/
     ├── css/
-    │   └── style.css            # Style CSS (Industrial High-Tech, RWD, animacje)
+    │   └── style.css            # Arkusz stylów (Mobile-first RWD, Forest Green & Slate)
     ├── js/
-    │   └── main.js              # Skrypty interaktywne (nawigacja, filtry, walidacja)
+    │   └── main.js              # Nawigacja mobilna, płynne przewijanie, obsługa formularza
     └── images/
-        ├── logo.png             # Zoptymalizowane logo do nagłówka i stopki
-        ├── hero/                # Zdjęcia sekcji hero (tła, detale spawalnicze)
-        ├── services/            # Grafiki i ikony dedykowane usługom
-        ├── tables/              # Zdjęcia i schematy modułowych stołów spawalniczych 3D
-        └── portfolio/           # Galeria wykonanych konstrukcji i detali
+        ├── logo.png             # Oficjalne logo z przezroczystym tłem (header/footer)
+        ├── favicon.png          # Ikona karty przeglądarki
+        ├── hero/                # Tło sekcji powitalnej
+        ├── services/            # Zdjęcia ilustrujące poszczególne obszary oferty
+        └── tables/              # Zdjęcie zaplecza hali produkcyjnej
 ```
 
 ---
 
-## 🚀 Wdrożenie na Hostido (Instrukcja Krok po Kroku)
+## 🚀 Wdrożenie na Hostido (Krok po kroku)
 
-Dzięki bezstanowej strukturze statycznej, wdrożenie strony na serwerze **Hostido** (lub dowolnym innym hostingu WWW) zajmuje poniżej 1 minuty:
-
-1. **Zaloguj się do panelu Hostido** (cPanel / DirectAdmin).
-2. Otwórz **Menadżer Plików** (*File Manager*) lub połącz się przez **FTP / SFTP** (np. programem FileZilla).
-3. Przejdź do katalogu głównego Twojej domeny (zazwyczaj jest to folder `public_html` lub `public_html/twojadomena.pl`).
-4. **Skopiuj zawartość folderu `ALYNX`**:
-   * Plik `index.html` musi znajdować się bezpośrednio w folderze `public_html`.
-   * Skopiuj cały katalog `assets/` wraz z podfolderami `css/`, `js/`, `images/`.
-5. Strona jest natychmiast widoczna pod Twoją domeną z certyfikatem SSL.
+1. **Zaloguj się do panelu Hostido** (DirectAdmin / cPanel) i otwórz **Menadżer Plików** (lub połącz się przez FTP / FileZilla).
+2. Wejdź do katalogu publicznego swojej domeny (najczęściej `public_html`).
+3. **Wgraj wyłącznie pliki produkcyjne strony**:
+   * Wszystkie 5 plików HTML: `index.html`, `oferta.html`, `realizacje.html`, `o-nas.html`, `kontakt.html`
+   * Cały folder `assets/` wraz z podfolderami (`css/`, `js/`, `images/`).
+   *(Folder `materiały/`, `Obszar roboczy 1.png` oraz `README.md` są plikami roboczymi/źródłowymi i nie muszą być kopiowane na serwer WWW).*
+4. Strona działa natychmiast pod Twoją domeną — bez bazy danych, PHP i budowania po stronie serwera.
 
 ---
 
 ## 🛠️ Stack Technologiczny
 
-* **Języki:** HTML5 (semantyka, accessibility ARIA), CSS3 (Custom Properties, Flexbox, CSS Grid, Glassmorphism), Vanilla JavaScript (ES6+).
-* **Typografia:** Nowoczesny bezszeryfowy font inżynierski (*Inter / Syne*) + akcenty techniczne (*JetBrains Mono*).
-* **Kolorystyka:** 
-  * Głębia i kontrast: `Slate / Dark Industrial` (`#0B0F19`, `#1E293B`)
-  * Akcent energetyczny: `Laser Electric Blue` (`#0284C7` / `#38BDF8`) & `Steel Amber` (`#F59E0B`)
-  * Tła techniczne: Siatki inżynierskie (blueprint grid) i subtelne linie wymiarowe.
-* **Wersjonowanie:** Git (Semantic Commits).
+* **Języki:** HTML5 (semantyka i ARIA), CSS3 (Custom Properties, Grid, Flexbox, RWD), Vanilla JavaScript (ES6+).
+* **Kolorystyka:** Czysta biel (`#FFFFFF`), jasna szarość przemysłowa (`#F8FAFC`), grafit/łupkowy (`#0F172A`) oraz zieleń przemysłowa (`#15803D`).
+* **Typografia:** *Inter*.
 
 ---
-
-## 👨‍💻 Autor i Zarządzanie Wersjami
-
-Projekt realizowany i utrzymywany w systemie kontroli wersji **Git**.
-
-```bash
-# Szybki podgląd lokalny (wystarczy uruchomić dowolny serwer statyczny lub otworzyć w przeglądarce):
-# Python:
-python -m http.server 3000
-
-# Lub po prostu dwuklik na plik index.html
-```
-
----
-*Copyright © 2026 ALYNX Engineering Wszelkie prawa zastrzeżone.*
+*Copyright © 2026 ALYNX Engineering. Wszelkie prawa zastrzeżone.*

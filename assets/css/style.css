@@ -434,6 +434,25 @@ ul {
   margin-bottom: 44px;
 }
 
+/* Zrównoważona siatka 5 kart: 3 w pierwszym rzędzie, 2 w drugim rzędzie na pełną szerokość */
+.services-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+.services-grid-5 > .service-card:nth-child(1),
+.services-grid-5 > .service-card:nth-child(2),
+.services-grid-5 > .service-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+.services-grid-5 > .service-card:nth-child(4),
+.services-grid-5 > .service-card:nth-child(5) {
+  grid-column: span 3;
+}
+
 .service-card {
   background-color: #FFFFFF;
   border: 1px solid var(--gray-border);
@@ -452,7 +471,7 @@ ul {
 }
 
 .service-image {
-  height: 190px;
+  height: 210px;
   overflow: hidden;
 }
 
@@ -475,41 +494,56 @@ ul {
 }
 
 .service-title {
-  font-size: 1.2rem;
+  font-size: 1.18rem;
   font-weight: 700;
   color: var(--text-main);
   margin-bottom: 10px;
+  line-height: 1.35;
 }
 
 .service-desc {
   font-size: 0.92rem;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.65;
   margin-bottom: 18px;
+}
+
+.service-card-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--gray-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary);
 }
 
 .service-list {
   margin-top: auto;
   border-top: 1px solid var(--gray-border);
-  padding-top: 14px;
+  padding-top: 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  font-size: 0.85rem;
+  gap: 10px;
+  font-size: 0.92rem;
+  line-height: 1.55;
   color: #334155;
 }
 
 .service-list li {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .service-list svg {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   color: var(--primary);
   flex-shrink: 0;
+  margin-top: 4px;
 }
 
 /* Baner Stołów 3D w sekcji Oferta */
@@ -563,18 +597,20 @@ ul {
 
 .tables-banner-img img {
   width: 100%;
-  height: 220px;
+  height: 260px;
   object-fit: cover;
+  display: block;
 }
 
 /* Rozwinięte bloki ofertowe dla podstrony oferta.html */
 .offer-detail-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 44px;
   align-items: center;
-  padding: 36px 0;
+  padding: 44px 0;
   border-bottom: 1px solid var(--gray-border);
+  scroll-margin-top: 105px;
 }
 
 .offer-detail-block:last-child {
@@ -598,8 +634,53 @@ ul {
 
 .offer-detail-img img {
   width: 100%;
-  height: 320px;
+  height: 360px;
   object-fit: cover;
+  display: block;
+}
+
+/* Status braku realizacji ("W trakcie realizacji / W przygotowaniu") */
+.portfolio-placeholder {
+  background-color: #FFFFFF;
+  border: 1px dashed #CBD5E1;
+  border-radius: var(--radius);
+  padding: 56px 32px;
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.portfolio-placeholder-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-placeholder-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.portfolio-placeholder h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+.portfolio-placeholder p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 580px;
+  margin: 0 auto 26px auto;
 }
 
 /* --- Sekcja 2: Realizacje (Galeria) --- */
@@ -915,6 +996,15 @@ ul {
   .offer-detail-block.reverse {
     direction: ltr;
   }
+  .services-grid-5 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .services-grid-5 > .service-card:nth-child(n) {
+    grid-column: span 1;
+  }
+  .services-grid-5 > .service-card:nth-child(5) {
+    grid-column: span 2;
+  }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1125,14 +1215,19 @@ ul {
   }
 
   /* Oferta na telefonie */
-  .services-grid {
+  .services-grid,
+  .services-grid-5 {
     grid-template-columns: 1fr;
     gap: 20px;
     margin-bottom: 32px;
   }
 
+  .services-grid-5 > .service-card:nth-child(n) {
+    grid-column: span 1;
+  }
+
   .service-card .service-image {
-    height: 180px;
+    height: 195px;
   }
 
   .service-content {
@@ -1148,7 +1243,7 @@ ul {
     margin-bottom: 14px;
   }
 
-  /* Baner stołów 3D */
+  /* Baner możliwości hali */
   .tables-banner {
     padding: 24px 18px;
     gap: 20px;
@@ -1177,7 +1272,7 @@ ul {
   }
 
   .tables-banner-img img {
-    height: 190px;
+    height: 200px;
   }
 
   /* Bloki szczegółów w oferta.html */
@@ -1187,7 +1282,20 @@ ul {
   }
 
   .offer-detail-img img {
-    height: 210px;
+    height: 220px;
+  }
+
+  /* Status w trakcie realizacji na telefonie */
+  .portfolio-placeholder {
+    padding: 36px 20px;
+  }
+
+  .portfolio-placeholder h3 {
+    font-size: 1.3rem;
+  }
+
+  .portfolio-placeholder p {
+    font-size: 0.94rem;
   }
 
   /* Galeria na telefonie */
