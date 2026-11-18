@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services &amp; Capabilities — ALYNX Engineering | Welding, Painting, CNC, CAD</title>
-  <meta name="description" content="Explore ALYNX Engineering industrial capabilities in Poland: certified MIG/MAG & TIG welding, airless protective painting, CNC machining, plate cutting, 3D CAD and quality assurance.">
+  <title>Oferta — ALYNX Engineering | Spawanie, malowanie, CNC, CAD i jakość</title>
+  <meta name="description" content="Sprawdź ofertę ALYNX Engineering ze Stalowej Woli: spawanie MIG/MAG i TIG, hydrodynamiczne malowanie i śrutowanie, obróbka CNC, cięcie blach, projektowanie CAD 3D oraz kontrola jakości.">
   
+  <!-- Identyfikacja dla Google, Chrome i PWA (Miniaturki i skróty "ALYNX") -->
   <meta name="application-name" content="ALYNX">
   <meta name="apple-mobile-web-app-title" content="ALYNX">
   <meta property="og:site_name" content="ALYNX Engineering">
-  <meta property="og:title" content="Services &amp; Capabilities — ALYNX Engineering">
-  <meta property="og:description" content="Certified structural welding, airless painting, CNC machining and CAD engineering in Stalowa Wola, Poland.">
+  <meta property="og:title" content="Oferta — ALYNX Engineering">
+  <meta property="og:description" content="Kompleksowa oferta ALYNX Engineering: spawanie konstrukcji, malarnia hydrodynamiczna, obróbka CNC i projektowanie CAD.">
   <meta property="og:image" content="../assets/images/logo.png">
   <link rel="manifest" href="../site.webmanifest">
   <link rel="alternate" hreflang="pl" href="../oferta.html">
@@ -46,11 +47,6 @@
           </svg>
           ul. Zdzisława Malickiego 118, 37-450 Stalowa Wola, Poland
         </span>
-        <div class="lang-switcher" aria-label="Language selection">
-          <a href="../oferta.html" class="lang-item" hreflang="pl" title="Polska wersja">PL</a>
-          <span class="lang-separator">/</span>
-          <span class="lang-item active">EN</span>
-        </div>
       </div>
     </div>
   </div>
@@ -58,11 +54,11 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo-btn" title="ALYNX Engineering — Home">
+      <a href="index.html" class="logo-btn" title="ALYNX Engineering — Homepage">
         <img src="../assets/images/logo.png" alt="ALYNX Engineering">
       </a>
 
-      <nav aria-label="Main navigation">
+      <nav aria-label="Menu strony">
         <ul class="nav-menu" id="navMenu">
           <li><a href="services.html" class="nav-link active">Services</a></li>
           <li><a href="projects.html" class="nav-link">Projects</a></li>
@@ -79,25 +75,29 @@
               Call: +48 881 424 247
             </a>
           </li>
-          <li class="mobile-only-action" style="padding-top: 10px; border-top: 1px solid var(--gray-border); display: flex; justify-content: center;">
-            <div class="lang-switcher" aria-label="Language selection">
-              <a href="../oferta.html" class="lang-item" hreflang="pl">PL</a>
-              <span class="lang-separator">/</span>
-              <span class="lang-item active">EN</span>
-            </div>
-          </li>
         </ul>
       </nav>
 
       <div style="display: flex; align-items: center; gap: 12px;">
-        <div class="lang-switcher" aria-label="Language selection">
-          <a href="../oferta.html" class="lang-item" hreflang="pl" title="Polska wersja">PL</a>
-          <span class="lang-separator">/</span>
-          <span class="lang-item active">EN</span>
-        </div>
-
+        <a href="./services.html" class="lang-flag-btn" hreflang="en" title="English version" aria-label="Switch to English">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="22" height="14" class="flag-icon" aria-hidden="true">
+            <clipPath id="uk-flag-clip-oferta">
+              <path d="M0 0v30h60V0z"/>
+            </clipPath>
+            <clipPath id="uk-flag-cross-oferta">
+              <path d="M30 15h30v15zv15h-30zh-30v-15zv-15h30z"/>
+            </clipPath>
+            <g clip-path="url(#uk-flag-clip-oferta)">
+              <path d="M0 0v30h60V0z" fill="#012169"/>
+              <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/>
+              <path d="M0 0l60 30m0-30L0 30" clip-path="url(#uk-flag-cross-oferta)" stroke="#C8102E" stroke-width="4"/>
+              <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/>
+              <path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/>
+            </g>
+          </svg>
+          <span>EN</span>
+        </a>
         <a href="contact.html" class="header-cta-btn">Request a Quote</a>
-        
         <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
@@ -111,234 +111,254 @@
   <section class="page-hero">
     <div class="container">
       <div class="breadcrumbs">
-        <a href="index.html">Home</a>
+        <a href="index.html">Homepage</a>
         <span>/</span>
         <span>Services</span>
       </div>
-      <h1 class="page-hero-title">Our Industrial Capabilities</h1>
+      <h1 class="page-hero-title">Our Services &amp; Capabilities</h1>
       <p class="page-hero-desc">
-        Full-cycle manufacturing — from 3D CAD modeling, through CNC machining and certified welding, to automated shot blasting and airless painting.
+        We design and manufacture complex steel structures, complete production lines, machinery parts, and specialized industrial tooling. In the heart of industrial Stalowa Wola, we deliver precision solutions for demanding sectors.
       </p>
     </div>
   </section>
 
-  <!-- DETAILED SERVICES LIST -->
+  <!-- GŁÓWNA TREŚĆ OFERTY -->
   <main class="section">
     <div class="container">
       
-      <!-- Block 1: Welding & Fabrication of Steel Structures -->
-      <div class="offer-detail-block" id="welding">
+      <!-- Blok 1: Spawanie i produkcja specjalistycznych konstrukcji stalowych -->
+      <div class="offer-detail-block" id="spawanie">
         <div>
-          <div class="section-kicker">Core Fabrication</div>
+          <div class="section-kicker">Welding &amp; Fabrication</div>
           <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--text-main); margin-bottom: 16px; line-height: 1.28;">
             Welding &amp; Fabrication of Specialized Steel Structures (MIG/MAG &amp; TIG)
           </h2>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 14px;">
-            We execute demanding welding contracts and manufacture complex custom steel assemblies. Our fabrication workshop is equipped with two 5-ton radio-controlled overhead cranes, enabling safe and efficient handling of heavy oversized weldments. Assembly and tack welding are carried out on professional modular 3D clamping tables, ensuring strict geometric accuracy and dimensional repeatability.
+            We execute demanding welding contracts and the fabrication of complex structural weldments. Our workshop is equipped with two radio-controlled overhead cranes with a lifting capacity of 5 tons each, allowing smooth and safe handling of oversized assemblies. Assembly work is conducted on heavy modular 3D welding tables, guaranteeing strict angular geometry and dimensional accuracy.
           </p>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 20px;">
-            We weld carbon structural steel as well as stainless and acid-resistant alloys for chemical and food processing industries.
+            We weld carbon structural steel, stainless steel, and acid-resistant alloys for demanding industries including food, chemical, and heavy machinery.
           </p>
           <ul class="service-list" style="border-top: 1px solid var(--gray-border); padding-top: 16px;">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Machine &amp; Equipment Frames</strong> — precision chassis, bases, heavy bedplates, and structural frames.</span>
+              <span><strong>Ramy maszyn oraz urządzeń</strong> — precyzyjne korpusy, ramy nośne, podstawy maszyn przemysłowych itp.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Prefabricated Structural Steel</strong> — structural components for industrial plants, infrastructure, and heavy facilities.</span>
+              <span><strong>Prefabrykacja konstrukcji stalowych dla budownictwa</strong> — gotowe elementy konstrukcyjne hal, obiektów przemysłowych oraz infrastruktury.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Conveyor &amp; Material Handling Systems</strong> — conveyor trusses, support legs, transfer chutes, and guide assemblies.</span>
+              <span><strong>Elementy systemów transportowych</strong> — podzespoły przenośników, ramy ciągów transportowych.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Production Lines</strong> — modular sections, mechanical bases, and automated transfer cells.</span>
+              <span><strong>Linie produkcyjne</strong> — kompletne moduły, ramy oraz zaawansowane sekcje robocze linii przemysłowych.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Specialized Welding &amp; Assembly Tooling</strong> — dedicated positioning fixtures, clamps, and jigs enhancing production efficiency.</span>
+              <span><strong>Oprzyrządowanie spawalnicze i montażowe</strong> — dedykowane przyrządy ustalające i pozycjonujące, usprawniające procesy produkcyjne.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Assemblies for Demanding Sectors</strong> — custom high-spec fabrications for railway, energy, offshore, and defense industries.</span>
+              <span><strong>Specjalistyczne konstrukcje dla wymagających branż</strong> — dedykowane wyroby o wysokim rygorze wykonania dla sektora kolejowego, energetycznego, offshore i zbrojeniowego.</span>
             </li>
           </ul>
         </div>
         <div class="offer-detail-img">
-          <img src="../assets/images/services/service-welding.jpg" alt="MIG/MAG and TIG welding station at ALYNX with 3D modular table and EWM welder">
+          <img src="../assets/images/services/service-welding.jpg" alt="Stanowisko spawalnicze MIG/MAG i TIG ALYNX z modularnym stołem 3D, urządzeniem spawalniczym EWM oraz suwnicą 5t">
         </div>
       </div>
 
-      <!-- Block 2: Airless Spray Painting & Surface Preparation -->
-      <div class="offer-detail-block reverse" id="painting">
+      <!-- Blok 2: Airless Spray Painting &amp; Surface Preparation -->
+      <div class="offer-detail-block reverse" id="malowanie">
         <div>
           <div class="section-kicker">Corrosion Protection</div>
           <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--text-main); margin-bottom: 16px; line-height: 1.28;">
-            Hydrodynamic Airless Spray Painting &amp; Surface Preparation
+            Airless Spray Painting &amp; Surface Preparation
           </h2>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 14px;">
-            At ALYNX Engineering, we deliver durable, industrial-grade corrosion protection systems compliant with demanding international standards for heavy industry, structural construction, and offshore environments.
+            W ALYNX Engineering zapewniamy kompleksowe i trwałe zabezpieczenia antykorozyjne konstrukcji stalowych, spełniające rygorystyczne normy dla przemysłu ciężkiego, budowlanego oraz sektora offshore i energetycznego.
           </p>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 14px;">
-            Proper surface preparation is crucial for coating adhesion. We utilize automated and manual shot blasting facilities that deliver repeatable, thorough cleaning to required surface cleanliness grades (Sa 2.5).
+            Kluczowym etapem uzyskania trwałej powłoki jest odpowiednie przygotowanie podłoża. Dysponujemy automatycznymi i ręcznymi śrutowniami, które pozwalają na szybkie, powtarzalne i precyzyjne oczyszczenie stali do wymaganych klas czystości.
           </p>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 20px;">
-            Coating applications are performed in a high-capacity industrial paint shop utilizing airless spray technology. This method allows uniform, high-build application of epoxy, polyurethane, and zinc primer systems, ensuring maximum protection against harsh atmospheric, chemical, and marine conditions.
+            Aplikację powłok wykonujemy w wydajnej malarni przemysłowej, wykorzystującej technologię zabezpieczeń hydrodynamicznych. Metoda ta pozwala na szybkie i jednolite nanoszenie systemów malarskich (epoksydowych, poliuretanowych czy cynkowych), gwarantując maksymalną odporność na czynniki atmosferyczne, chemiczne oraz środowisko morskie.
           </p>
           <ul class="service-list" style="border-top: 1px solid var(--gray-border); padding-top: 16px;">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Automated &amp; Manual Shot Blasting</strong> — thorough descaling, rust removal, and surface profiling up to Sa 2.5 cleanliness.</span>
+              <span><strong>Malarnia o dużej wydajności</strong> — dostosowana do sprawnej obsługi wielkogabarytowych konstrukcji oraz serii produkcyjnych w krótkim czasie.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Airless Spray Painting</strong> — uniform, high-efficiency application of heavy-duty industrial coatings.</span>
+              <span><strong>Automatyczne śrutowanie stali</strong> — precyzyjne przygotowanie powierzchni zapewniające idealną przyczepność powłok malarskich i usunięcie zgorzeliny oraz rdzawych nalotów.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Multi-Coat Coating Systems</strong> — epoxy primers, intermediate coats, and polyurethane topcoats tailored to corrosivity categories C3, C4, C5-M.</span>
+              <span><strong>Malowanie hydrodynamiczne</strong> — wysoka jakość i ciągłość powłoki ochronnej przy zachowaniu najwyższych parametrów grubościowych.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>DFT Coating Inspection</strong> — calibrated dry film thickness measurements with inspection reporting.</span>
+              <span><strong>Specjalistyczne systemy antykorozyjne</strong> — aplikacja farb epoksydowych, poliuretanowych oraz zestawów malarskich dedykowanych dla branży offshore, kolejowej i energetycznej.</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>Kontrola jakości powłok</strong> — pomiar grubości warstwy oraz weryfikacja warunków schnięcia.</span>
             </li>
           </ul>
         </div>
         <div class="offer-detail-img">
-          <img src="../assets/images/services/service-coating.jpg" alt="Airless spray coating and abrasive surface preparation">
+          <img src="../assets/images/services/service-coating.jpg" alt="Malarnia przemysłowa i zabezpieczenie antykorozyjne konstrukcji stalowej">
         </div>
       </div>
 
-      <!-- Block 3: Large CNC Machining & Plate Cutting -->
+      <!-- Blok 3: Large-Scale CNC Machining &amp; Precision Sheet Cutting -->
       <div class="offer-detail-block" id="cnc">
         <div>
-          <div class="section-kicker">Machining &amp; Cutting</div>
+          <div class="section-kicker">Kooperacja i obróbka mechaniczna</div>
           <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--text-main); margin-bottom: 16px; line-height: 1.28;">
-            Large-Scale CNC Machining &amp; Precision Sheet Metal Cutting
+            Large-Scale CNC Machining &amp; Precision Sheet Cutting
           </h2>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 14px;">
-            To provide comprehensive turnkey execution, ALYNX Engineering coordinates large-scale mechanical machining and precision plate cutting through a vetted, closely audited network of permanent manufacturing partners in the industrial hub of Stalowa Wola.
+            W ALYNX Engineering stawiamy na pełną kompleksowość – od surowego materiału, przez cięcie, spawanie i obróbkę mechaniczną, malowanie aż po gotowe wyroby. Aby zapewnić naszym Klientom brak ograniczeń gabarytowych i sprzętowych, zaawansowane usługi obróbki skrawaniem oraz cięcia realizujemy we współpracy z szeroką, sprawdzoną siecią stałych podwykonawców.
           </p>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 20px;">
-            This partnership model eliminates machinery and dimensional bottlenecks. Clients receive completely finished, CNC-milled, drilled, bored, and painted assemblies from a single accountable supplier, with full quality responsibility resting with ALYNX Engineering.
+            Dzięki bogatej bazie zweryfikowanych partnerów biznesowych sprawnie koordynujemy procesy wielkogabarytowej obróbki CNC konstrukcji spawanych, a także cięcia laserowego oraz plazmowo-tlenowego blach. Przejmujemy pełną odpowiedzialność za terminowość, jakość oraz zgodność wykonania z dokumentacją techniczną – dostarczasz projekt lub założenia, a odbierasz idealnie dopasowany, gotowy element.
           </p>
           <ul class="service-list" style="border-top: 1px solid var(--gray-border); padding-top: 16px;">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Large-Scale CNC Machining</strong> — 3-, 4-, and 5-axis milling, turning, and horizontal boring of welded bodies and frames.</span>
+              <span><strong>Wielkogabarytowa obróbka CNC konstrukcji spawanych</strong> — precyzyjne frezowanie, toczenie i wytaczanie korpusów, ram oraz podzespołów maszyn po procesie spawania.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Laser Cutting</strong> — high-precision cutting of thin and medium steel sheets with clean, burr-free edges.</span>
+              <span><strong>Cięcie laserowe blach</strong> — najwyższa precyzja krawędzi i powtarzalność detali ze stali węglowej, nierdzewnej oraz stopów aluminium.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Plasma &amp; Oxy-Fuel Cutting</strong> — cutting of thick structural steel plates with precise bevel preparation for welding.</span>
+              <span><strong>Cięcie plazmowo-tlenowe</strong> — wydajne cięcie grubych blach konstrukcyjnych i arkuszy wielkoformatowych pod dalszą prefabrykację.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Quality Guarantee &amp; Engineering Control</strong> — 100% dimensional verification of outsourced components before assembly.</span>
+              <span><strong>Kompleksowa realizacja „pod klucz”</strong> — pełne zarządzanie łańcuchem dostaw (od zakupu materiału, przez cięcie i obróbkę CNC, po spawanie i malowanie) w ramach jednego zamówienia w ALYNX Engineering.</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>Gwarancja jakości i nadzór inżynieryjny</strong> — stała kontrola wymiarowa i techniczna wyrobów dostarczanych przez naszą sieć partnerów.</span>
             </li>
           </ul>
         </div>
         <div class="offer-detail-img">
-          <img src="../assets/images/services/service-cnc.jpg" alt="Large-scale CNC milling of welded machinery bedplates">
+          <img src="../assets/images/services/service-cnc.jpg" alt="Wielkogabarytowa obróbka CNC korpusu spawanego i cięcie blach">
         </div>
       </div>
 
-      <!-- Block 4: 3D CAD Design & Engineering Oversight -->
+      <!-- Blok 4: 3D CAD Design, Technical Documentation &amp; Engineering Supervision -->
       <div class="offer-detail-block reverse" id="cad">
         <div>
-          <div class="section-kicker">Engineering Office</div>
+          <div class="section-kicker">Biuro projektowo-technologiczne</div>
           <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--text-main); margin-bottom: 16px; line-height: 1.28;">
-            3D CAD Design, Technical Documentation &amp; Engineering Oversight
+            3D CAD Design, Technical Documentation &amp; Engineering Supervision
           </h2>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 14px;">
-            Our in-house engineering and technology office serves as the technical heart of ALYNX. We combine advanced mechanical software with practical welding and manufacturing experience, supporting projects from concept to final commissioning.
+            Posiadamy własne biuro projektowo-technologiczne, które stanowi inżynieryjne serce naszej firmy. Łączymy zaawansowane oprogramowanie inżynierskie z praktyczną wiedzą spawalniczą i produkcyjną, oferując pełne wsparcie na każdym etapie – od pierwszych koncepcji po wdrożenie.
           </p>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 20px;">
-            We generate parametric 3D CAD models and full 2D workshop documentation. Beyond modeling, we manage project schedules, coordinate tolerances, and advise on cost-saving design optimizations for fabrication and machining.
+            Tworzymy zaawansowane modele 3D CAD oraz kompletną dokumentację wykonawczą i montażową 2D. Nie ograniczamy się jedynie do rysowania: kompleksowo prowadzimy i nadzorujemy projekty, dbając o optymalizację kosztów. Świadczymy również profesjonalne doradztwo techniczne, pomagając w doborze materiałów, geometrii i metod wytwarzania tak, aby gotowy wyrób spełniał najwyższe wymagania jakościowe.
           </p>
           <ul class="service-list" style="border-top: 1px solid var(--gray-border); padding-top: 16px;">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>3D CAD Modeling</strong> — parametric assemblies of machines, devices, conveyor lines, and heavy steel structures.</span>
+              <span><strong>Projektowanie 3D CAD</strong> — tworzenie zaawansowanych modeli maszyn, urządzeń, linii produkcyjnych oraz specjalistycznych konstrukcji stalowych.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>2D Workshop Documentation</strong> — detailed manufacturing, welding, and assembly drawings matching ISO standards.</span>
+              <span><strong>Opracowanie dokumentacji 2D</strong> — przygotowanie pełnej dokumentacji wykonawczej, warsztatowej i montażowej zgodnej z obowiązującymi normami.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Engineering Supervision</strong> — direct supervision over fabrication tolerances, welding sequences, and assembly fit-up.</span>
+              <span><strong>Kompleksowe zarządzanie i nadzór nad projektami</strong> — sprawowanie pełnej kontroli inżynieryjnej nad harmonogramem, budżetem i jakością realizacji od pomysłu do wyrobu gotowego.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Design for Manufacturing (DFM)</strong> — geometry and weld joint optimization to reduce weight, fabrication time, and cost.</span>
+              <span><strong>Doradztwo techniczne</strong> — analiza i dostosowanie projektów pod kątem oszczędności materiałowych oraz usprawnienia procesów spawania i obróbki.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Reverse Engineering &amp; Modernization</strong> — reconstruction of CAD documentation from physical parts and line upgrades.</span>
+              <span><strong>Inżynieria odwrotna i modernizacje</strong> — odtwarzanie dokumentacji na podstawie istniejących detali oraz udoskonalanie działających linii produkcyjnych.</span>
             </li>
           </ul>
         </div>
         <div class="offer-detail-img">
-          <img src="../assets/images/services/service-cad.jpg" alt="In-house 3D CAD design station and engineering drawings">
+          <img src="../assets/images/services/service-cad.jpg" alt="Stanowisko projektowe CAD 3D i dokumentacja techniczna 2D">
         </div>
       </div>
 
-      <!-- Block 5: Quality Assurance & Standards -->
-      <div class="offer-detail-block" id="quality">
+      <!-- Blok 5: Kontrola jakości i wysokie standardy produkcyjne -->
+      <div class="offer-detail-block" id="jakosc">
         <div>
-          <div class="section-kicker">Quality Standard</div>
+          <div class="section-kicker">Standard jakości</div>
           <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--text-main); margin-bottom: 16px; line-height: 1.28;">
-            Quality Assurance &amp; Rigorous Production Standards
+            Kontrola jakości i wysokie standardy produkcyjne
           </h2>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 14px;">
-            Quality control is an integral element of every manufacturing stage at ALYNX Engineering. We operate with strict traceability from incoming raw material verification to final coating inspection.
+            Dział kontroli jakości czuwa nad tym, aby każdy wyrób opuszczający naszą halę w Stalowej Woli odpowiadał najwyższym wymaganiom normatywnym i branżowym.
           </p>
           <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 20px;">
-            Every fabricated structure undergoes thorough multi-stage inspection: weld preparation check, visual (VT) weld testing, dimensional verification on 3D modular tables and after CNC machining, and coating dry film thickness (DFT) measurements.
+            Szczególny kładziemy nacisk na staranne przygotowanie materiałów do spawania – od dokładnego trasowania, ukosowania i czyszczenia krawędzi, po precyzyjną weryfikację geometrii na stołach montażowych. Utrzymujemy wysoki standard jakości spawania, realizując spoiny o najwyższej estetyce, pełnym wtopieniu i braku wad wewnętrznych. Nasza kontrola obejmuje również weryfikację wymiarową obrobionych elementów CNC oraz badanie parametrów nałożonych powłok malarskich, co daje naszym Klientom pewność i bezpieczeństwo użytkowania konstrukcji w najtrudniejszych warunkach.
           </p>
           <ul class="service-list" style="border-top: 1px solid var(--gray-border); padding-top: 16px;">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Material Traceability</strong> — 100% inspection of incoming steel with EN 10204 3.1 mill test certificates.</span>
+              <span><strong>Wysoki standard jakości spawania</strong> — rygorystyczna kontrola spoin pod kątem geometrii, przetopu i braku niezgodności spawalniczych.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Weld Quality Control</strong> — visual inspection (VT), bevel verification, and clean multi-pass weld execution.</span>
+              <span><strong>Staranne przygotowanie materiału</strong> — precyzyjne ukosowanie, czyszczenie i pasowanie krawędzi przed procesem łączenia, gwarantujące trwałość spoiny.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Dimensional Verification</strong> — checking diagonal tolerances, flatness, and post-machining hole patterns.</span>
+              <span><strong>Weryfikacja geometrii i wymiarów</strong> — pomiary konstrukcji na profesjonalnych stołach montażowych oraz kontrola po obróbce CNC.</span>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Coating Inspection</strong> — measurement of surface roughness post-blasting and dry film thickness (DFT).</span>
+              <span><strong>Kontrola powłok ochronnych</strong> — pomiary grubości powłok malarskich oraz ocena stopnia przygotowania podłoża po śrutowaniu.</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>Pełna identyfikowalność i dokumentacja</strong> — kontrola materiałów wsadowych (atesty 3.1) oraz tworzenie kompletnych kart kontroli jakościowych dla realizowanych projektów.</span>
             </li>
           </ul>
+          <div style="margin-top: 24px;">
+            <a href="kontakt.html" class="btn btn-primary">Skonsultuj swoje zlecenie &rarr;</a>
+          </div>
         </div>
         <div class="offer-detail-img">
-          <img src="../assets/images/services/service-quality.jpg" alt="Quality inspection of welded assemblies and coating thickness testing">
+          <img src="../assets/images/services/service-quality.jpg" alt="Narzędzia pomiarowe oraz kontrola jakości spoiny i powłoki ochronnej">
         </div>
-      </div>
-
-      <!-- CTA Box -->
-      <div style="background-color: var(--primary-subtle); border: 1px solid #BBF7D0; border-radius: var(--radius); padding: 36px; text-align: center; margin-top: 50px;">
-        <h3 style="font-size: 1.45rem; font-weight: 700; color: var(--text-main); margin-bottom: 10px;">
-          Planning a welded assembly or production line project?
-        </h3>
-        <p style="color: var(--text-muted); font-size: 0.98rem; max-width: 640px; margin: 0 auto 22px auto; line-height: 1.6;">
-          Submit your 2D drawings, 3D CAD models, or technical requirements. We will analyze the manufacturing technology and prepare a competitive commercial quotation.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Request a Free Project Quotation</a>
       </div>
 
     </div>
   </main>
+
+  <!-- BANER ZAPYTANIA OFERTOWEGO -->
+  <section class="section section-alt">
+    <div class="container" style="text-align: center; max-width: 700px;">
+      <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--text-main); margin-bottom: 12px;">
+        Potrzebujesz szybkiej wyceny?
+      </h2>
+      <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 1.05rem;">
+        Prześlij rysunek techniczny lub model 3D na nasz adres e-mail lub skorzystaj z formularza kontaktowego. Odpowiadamy sprawnie i rzeczowo.
+      </p>
+      <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+        <a href="kontakt.html" class="btn btn-primary">Przejdź do formularza</a>
+        <a href="tel:+48881424247" class="btn btn-outline">Call: +48 881 424 247</a>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -349,52 +369,42 @@
             <img src="../assets/images/logo.png" alt="ALYNX Engineering" class="footer-logo">
           </a>
           <p class="footer-about">
-            ALYNX Engineering Sp. z o.o. — Welded steel structures, turnkey production lines, industrial airless painting, and 3D CAD design in Stalowa Wola, Poland.
+            ALYNX Engineering Sp. z o.o. — Konstrukcje stalowe, linie produkcyjne, malarnia hydrodynamiczna oraz projektowanie CAD w Stalowej Woli.
           </p>
-          <div style="font-size: 0.82rem; color: #64748B;">VAT ID (NIP): PL8652594538</div>
+          <div style="font-size: 0.82rem; color: #64748B;">NIP: 8652594538</div>
         </div>
-
         <div>
-          <h4 class="footer-title">Navigation</h4>
+          <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services &amp; Capabilities</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact &amp; RFQ</a></li>
+            <li><a href="oferta.html">Oferta</a></li>
+            <li><a href="realizacje.html">Realizacje</a></li>
+            <li><a href="o-nas.html">O nas</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </div>
-
         <div>
-          <h4 class="footer-title">Capabilities</h4>
+          <h4 class="footer-col-title">Zakres prac</h4>
           <ul class="footer-links">
-            <li><a href="services.html#welding">MIG/MAG &amp; TIG Welding</a></li>
-            <li><a href="services.html#painting">Airless Spray Painting</a></li>
-            <li><a href="services.html#cnc">Large CNC Machining</a></li>
-            <li><a href="services.html#cad">3D CAD Design &amp; 2D Drawings</a></li>
-            <li><a href="services.html#quality">Quality Assurance &amp; Tests</a></li>
+            <li><a href="oferta.html#spawanie">Spawanie (MIG/MAG &amp; TIG)</a></li>
+            <li><a href="services.html#malowanie">Blasting &amp; Coating</a></li>
+            <li><a href="oferta.html#cnc">Obróbka CNC i cięcie blach</a></li>
+            <li><a href="services.html#cad">3D CAD Design &amp; DFM</a></li>
+            <li><a href="services.html#jakosc">Quality Assurance &amp; 3.1</a></li>
           </ul>
         </div>
-
         <div>
-          <h4 class="footer-title">Contact</h4>
-          <ul class="footer-links">
-            <li><a href="tel:+48881424247">+48 881 424 247</a></li>
-            <li><a href="mailto:biuro@alynx.com.pl">biuro@alynx.com.pl</a></li>
-            <li style="color: #94A3B8; font-size: 0.88rem; line-height: 1.5; margin-top: 4px;">
-              ul. Zdzisława Malickiego 118<br>
-              37-450 Stalowa Wola, Poland
-            </li>
-          </ul>
+          <h4 class="footer-col-title">Contact</h4>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem;">
+            <div>Sebastian Ajryś</div>
+            <div>Phone: <a href="tel:+48881424247" style="color: var(--primary); font-weight: 600;">+48 881 424 247</a></div>
+            <div>E-mail: <a href="mailto:biuro@alynx.com.pl">biuro@alynx.com.pl</a></div>
+            <div style="color: #64748B; margin-top: 4px;">ul. Zdzisława Malickiego 118<br>37-450 Stalowa Wola, Poland</div>
+          </div>
         </div>
       </div>
-
       <div class="footer-bottom">
         <div>&copy; <span id="currentYear">2026</span> ALYNX Engineering Sp. z o.o. All rights reserved.</div>
-        <div style="display: flex; gap: 16px; align-items: center;">
-          <a href="../oferta.html" hreflang="pl">Polska wersja (PL)</a>
-          <a href="contact.html">Privacy &amp; Contact</a>
-        </div>
+        <div>Stalowa Wola, Poland</div>
       </div>
     </div>
   </footer>

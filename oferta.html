@@ -47,11 +47,6 @@
           </svg>
           ul. Zdzisława Malickiego 118, 37-450 Stalowa Wola
         </span>
-        <div class="lang-switcher" aria-label="Wybór języka / Language selection">
-          <span class="lang-item active">PL</span>
-          <span class="lang-separator">/</span>
-          <a href="./en/services.html" class="lang-item" hreflang="en" title="English version">EN</a>
-        </div>
       </div>
     </div>
   </div>
@@ -80,22 +75,28 @@
               Zadzwoń: +48 881 424 247
             </a>
           </li>
-          <li class="mobile-only-action" style="padding-top: 10px; border-top: 1px solid var(--gray-border); display: flex; justify-content: center;">
-            <div class="lang-switcher" aria-label="Wybór języka">
-              <span class="lang-item active">PL</span>
-              <span class="lang-separator">/</span>
-              <a href="./en/services.html" class="lang-item" hreflang="en">EN</a>
-            </div>
-          </li>
         </ul>
       </nav>
 
       <div style="display: flex; align-items: center; gap: 12px;">
-        <div class="lang-switcher" aria-label="Wybór języka / Language selection">
-          <span class="lang-item active">PL</span>
-          <span class="lang-separator">/</span>
-          <a href="./en/services.html" class="lang-item" hreflang="en" title="English version">EN</a>
-        </div>
+        <a href="./en/services.html" class="lang-flag-btn" hreflang="en" title="English version" aria-label="Switch to English">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="22" height="14" class="flag-icon" aria-hidden="true">
+            <clipPath id="uk-flag-clip-oferta">
+              <path d="M0 0v30h60V0z"/>
+            </clipPath>
+            <clipPath id="uk-flag-cross-oferta">
+              <path d="M30 15h30v15zv15h-30zh-30v-15zv-15h30z"/>
+            </clipPath>
+            <g clip-path="url(#uk-flag-clip-oferta)">
+              <path d="M0 0v30h60V0z" fill="#012169"/>
+              <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/>
+              <path d="M0 0l60 30m0-30L0 30" clip-path="url(#uk-flag-cross-oferta)" stroke="#C8102E" stroke-width="4"/>
+              <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/>
+              <path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/>
+            </g>
+          </svg>
+          <span>EN</span>
+        </a>
         <a href="kontakt.html" class="header-cta-btn">Darmowa wycena</a>
         <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Otwórz menu">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -403,9 +404,7 @@
       </div>
       <div class="footer-bottom">
         <div>&copy; <span id="currentYear">2026</span> ALYNX Engineering Sp. z o.o. Wszelkie prawa zastrzeżone.</div>
-        <div style="display: flex; gap: 16px; align-items: center;">
-          <a href="./en/services.html" hreflang="en">English version (EN)</a>
-        </div>
+        <div>Stalowa Wola</div>
       </div>
     </div>
   </footer>

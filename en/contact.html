@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact &amp; RFQ — ALYNX Engineering | Stalowa Wola, Poland</title>
-  <meta name="description" content="Contact ALYNX Engineering in Stalowa Wola, Poland. Sebastian Ajryś — Phone: +48 881 424 247, Email: biuro@alynx.com.pl. Request a quotation for steel fabrication, welding, painting, CNC and CAD.">
+  <title>Kontakt — ALYNX Engineering | Wycena i dane kontaktowe</title>
+  <meta name="description" content="Skontaktuj się z ALYNX Engineering w Stalowej Woli. Sebastian Ajryś — telefon: +48 881 424 247, email: biuro@alynx.com.pl. Wyceny konstrukcji stalowych, spawania, malarni, CNC i projektowania CAD.">
   
+  <!-- Identyfikacja dla Google, Chrome i PWA (Miniaturki i skróty "ALYNX") -->
   <meta name="application-name" content="ALYNX">
   <meta name="apple-mobile-web-app-title" content="ALYNX">
   <meta property="og:site_name" content="ALYNX Engineering">
-  <meta property="og:title" content="Contact &amp; RFQ — ALYNX Engineering">
-  <meta property="og:description" content="Get in touch with ALYNX Engineering in Stalowa Wola, Poland. Quotation form, phone and facility address.">
+  <meta property="og:title" content="Kontakt — ALYNX Engineering">
+  <meta property="og:description" content="Skontaktuj się z ALYNX Engineering w Stalowej Woli. Formularz wyceny, telefon i adres zakładu produkcyjnego.">
   <meta property="og:image" content="../assets/images/logo.png">
   <link rel="manifest" href="../site.webmanifest">
   <link rel="alternate" hreflang="pl" href="../kontakt.html">
@@ -46,11 +47,6 @@
           </svg>
           ul. Zdzisława Malickiego 118, 37-450 Stalowa Wola, Poland
         </span>
-        <div class="lang-switcher" aria-label="Language selection">
-          <a href="../kontakt.html" class="lang-item" hreflang="pl" title="Polska wersja">PL</a>
-          <span class="lang-separator">/</span>
-          <span class="lang-item active">EN</span>
-        </div>
       </div>
     </div>
   </div>
@@ -58,11 +54,11 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo-btn" title="ALYNX Engineering — Home">
+      <a href="index.html" class="logo-btn" title="ALYNX Engineering — Homepage">
         <img src="../assets/images/logo.png" alt="ALYNX Engineering">
       </a>
 
-      <nav aria-label="Main navigation">
+      <nav aria-label="Menu strony">
         <ul class="nav-menu" id="navMenu">
           <li><a href="services.html" class="nav-link">Services</a></li>
           <li><a href="projects.html" class="nav-link">Projects</a></li>
@@ -79,25 +75,29 @@
               Call: +48 881 424 247
             </a>
           </li>
-          <li class="mobile-only-action" style="padding-top: 10px; border-top: 1px solid var(--gray-border); display: flex; justify-content: center;">
-            <div class="lang-switcher" aria-label="Language selection">
-              <a href="../kontakt.html" class="lang-item" hreflang="pl">PL</a>
-              <span class="lang-separator">/</span>
-              <span class="lang-item active">EN</span>
-            </div>
-          </li>
         </ul>
       </nav>
 
       <div style="display: flex; align-items: center; gap: 12px;">
-        <div class="lang-switcher" aria-label="Language selection">
-          <a href="../kontakt.html" class="lang-item" hreflang="pl" title="Polska wersja">PL</a>
-          <span class="lang-separator">/</span>
-          <span class="lang-item active">EN</span>
-        </div>
-
+        <a href="./contact.html" class="lang-flag-btn" hreflang="en" title="English version" aria-label="Switch to English">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="22" height="14" class="flag-icon" aria-hidden="true">
+            <clipPath id="uk-flag-clip-kontakt">
+              <path d="M0 0v30h60V0z"/>
+            </clipPath>
+            <clipPath id="uk-flag-cross-kontakt">
+              <path d="M30 15h30v15zv15h-30zh-30v-15zv-15h30z"/>
+            </clipPath>
+            <g clip-path="url(#uk-flag-clip-kontakt)">
+              <path d="M0 0v30h60V0z" fill="#012169"/>
+              <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/>
+              <path d="M0 0l60 30m0-30L0 30" clip-path="url(#uk-flag-cross-kontakt)" stroke="#C8102E" stroke-width="4"/>
+              <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/>
+              <path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/>
+            </g>
+          </svg>
+          <span>EN</span>
+        </a>
         <a href="contact.html" class="header-cta-btn">Request a Quote</a>
-        
         <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
@@ -111,31 +111,33 @@
   <section class="page-hero">
     <div class="container">
       <div class="breadcrumbs">
-        <a href="index.html">Home</a>
+        <a href="index.html">Homepage</a>
         <span>/</span>
         <span>Contact</span>
       </div>
       <h1 class="page-hero-title">Contact ALYNX Engineering</h1>
       <p class="page-hero-desc">
-        Get in touch with our team for project inquiries, technical evaluations, and commercial quotations.
+        Have inquiries about steel fabrication, need a quotation, or want to consult an engineering project? Call or write to us directly.
       </p>
     </div>
   </section>
 
-  <!-- CONTACT CONTENT -->
+  <!-- FORMULARZ I DANE KONTAKTOWE -->
   <main class="section">
     <div class="container">
       
       <div class="contact-grid">
         
-        <!-- Contact Information Card -->
+        <!-- Lewa kolumna: Dane kontaktowe -->
         <div class="contact-card">
-          <h3>Direct Contact</h3>
+          <div class="section-kicker">Direct Contact</div>
+          <h3>Company Information</h3>
           <p>
-            Have an engineering inquiry, a drawing to estimate, or need advice on steel fabrication? Contact us directly:
+            We ensure prompt, technical responses to requests for quotation. If you have engineering drawings ready, you may send them directly to our email or submit an inquiry using the form.
           </p>
 
           <div class="contact-list">
+            
             <div class="contact-row">
               <div class="contact-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -143,9 +145,10 @@
                 </svg>
               </div>
               <div>
-                <span class="contact-label">Telephone</span>
-                <a href="tel:+48881424247" class="contact-val">+48 881 424 247</a>
-                <span class="contact-sub">Direct contact: Sebastian Ajryś</span>
+                <div class="contact-label">Direct Phone</div>
+                <div class="contact-value">
+                  <a href="tel:+48881424247">+48 881 424 247</a>
+                </div>
               </div>
             </div>
 
@@ -156,9 +159,10 @@
                 </svg>
               </div>
               <div>
-                <span class="contact-label">Email</span>
-                <a href="mailto:biuro@alynx.com.pl" class="contact-val">biuro@alynx.com.pl</a>
-                <span class="contact-sub">Drawings, inquiries and RFPs</span>
+                <div class="contact-label">Email Address</div>
+                <div class="contact-value">
+                  <a href="mailto:biuro@alynx.com.pl">biuro@alynx.com.pl</a>
+                </div>
               </div>
             </div>
 
@@ -170,80 +174,71 @@
                 </svg>
               </div>
               <div>
-                <span class="contact-label">Plant Address</span>
-                <span class="contact-val">ul. Zdzisława Malickiego 118</span>
-                <span class="contact-sub">37-450 Stalowa Wola, Poland</span>
+                <div class="contact-label">Plant Address</div>
+                <div class="contact-value">
+                  ul. Zdzisława Malickiego 118<br>
+                  37-450 Stalowa Wola
+                </div>
               </div>
             </div>
 
-            <div class="contact-row">
-              <div class="contact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-              </div>
-              <div>
-                <span class="contact-label">Business Hours</span>
-                <span class="contact-val">Mon – Fri: 07:00 – 16:00 (CET)</span>
-                <span class="contact-sub">Production Plant &amp; Engineering Office</span>
-              </div>
-            </div>
           </div>
 
           <div style="background-color: var(--bg-alt); border: 1px solid var(--gray-border); border-radius: var(--radius); padding: 18px; font-size: 0.88rem; color: #475569;">
             <strong>ALYNX Engineering Sp. z o.o.</strong><br>
             VAT ID (NIP): PL8652594538<br>
-            Contact Person: <strong>Sebastian Ajryś</strong>
+            Managing Contact: <strong>Sebastian Ajryś</strong>
           </div>
         </div>
 
-        <!-- RFQ Form Card -->
-        <div class="contact-card">
+        <!-- Prawa kolumna: Formularz kontaktowy -->
+        <div class="form-card">
           <h3>Request a Quotation</h3>
-          <p>
-            Fill out the form below. We will review your project parameters and respond with technical analysis and a commercial proposal.
-          </p>
+          <p>Fill out the form below — it will generate a prepared email inquiry for our engineering team.</p>
 
-          <form id="contactForm" class="contact-form">
+          <form id="contactForm">
+            
             <div class="form-row">
               <div class="form-group">
                 <label for="cName" class="form-label">Full Name / Company Name *</label>
-                <input type="text" id="cName" class="form-control" placeholder="e.g. John Doe / ABC Engineering" required>
+                <input type="text" id="cName" class="form-input" placeholder="e.g. John Doe / ABC Engineering" required>
               </div>
               <div class="form-group">
                 <label for="cPhone" class="form-label">Phone Number *</label>
-                <input type="tel" id="cPhone" class="form-control" placeholder="e.g. +48 881 424 247" required>
+                <input type="tel" id="cPhone" class="form-input" placeholder="+48 500 000 000" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cEmail" class="form-label">Email Address *</label>
+                <input type="email" id="cEmail" class="form-input" placeholder="e.g. john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="cService" class="form-label">Inquiry Scope / Topic</label>
+                <select id="cService" class="form-select">
+                  <option value="Welding & Steel Structures (MIG/MAG & TIG)">Welding &amp; steel structures (MIG/MAG &amp; TIG)</option>
+                  <option value="Airless Spray Painting & Blasting">Airless spray painting &amp; shot blasting</option>
+                  <option value="Large CNC Machining & Cutting">Large-scale CNC machining &amp; plate cutting</option>
+                  <option value="3D CAD Design & Documentation">3D CAD design &amp; engineering supervision</option>
+                  <option value="Turnkey Execution / Other">Turnkey project execution / Other</option>
+                </select>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="cEmail" class="form-label">Email Address *</label>
-              <input type="email" id="cEmail" class="form-control" placeholder="e.g. contact@company.com" required>
+              <label for="cMessage" class="form-label">Message / Project Description *</label>
+              <textarea id="cMessage" class="form-textarea" placeholder="Briefly describe the structure, required dimensions, quantity, steel grade, or fabrication scope..." required></textarea>
             </div>
 
-            <div class="form-group">
-              <label for="cService" class="form-label">Scope of Services</label>
-              <select id="cService" class="form-control">
-                <option value="General Inquiry">General Technical Inquiry</option>
-                <option value="Welding & Steel Structures">Welding &amp; Fabrication of Steel Structures</option>
-                <option value="Airless Spray Painting & Blasting">Airless Painting &amp; Abrasive Blasting</option>
-                <option value="CNC Machining & Cutting">Large-Scale CNC Machining &amp; Cutting</option>
-                <option value="CAD 3D Design">3D CAD Design &amp; 2D Drawings</option>
-                <option value="Production Lines">Complete Production Lines / Jigs &amp; Fixtures</option>
-              </select>
+            <div style="font-size: 0.8rem; color: #64748B; margin-bottom: 20px;">
+              * Technical drawings (PDF, STEP, DXF, DWG) can also be emailed directly to: <strong>biuro@alynx.com.pl</strong>
             </div>
 
-            <div class="form-group">
-              <label for="cMessage" class="form-label">Message / Project Details *</label>
-              <textarea id="cMessage" class="form-control" rows="5" placeholder="Specify required materials, dimensions, quantities, tolerances, or scope of fabrication..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;" id="submitBtn">
-              Send Inquiry &rarr;
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Inquiry for Quotation
             </button>
-            <div style="font-size: 0.8rem; color: #94A3B8; text-align: center; margin-top: 10px;">
-              Drawings (PDF, DWG, STEP) can be sent directly to: biuro@alynx.com.pl
-            </div>
+
           </form>
         </div>
 
@@ -261,52 +256,42 @@
             <img src="../assets/images/logo.png" alt="ALYNX Engineering" class="footer-logo">
           </a>
           <p class="footer-about">
-            ALYNX Engineering Sp. z o.o. — Welded steel structures, turnkey production lines, industrial airless painting, and 3D CAD design in Stalowa Wola, Poland.
+            ALYNX Engineering Sp. z o.o. — Konstrukcje stalowe, linie produkcyjne, malarnia hydrodynamiczna oraz projektowanie CAD w Stalowej Woli.
           </p>
           <div style="font-size: 0.82rem; color: #64748B;">VAT ID (NIP): PL8652594538</div>
         </div>
-
         <div>
-          <h4 class="footer-title">Navigation</h4>
+          <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services &amp; Capabilities</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact &amp; RFQ</a></li>
+            <li><a href="oferta.html">Oferta</a></li>
+            <li><a href="realizacje.html">Realizacje</a></li>
+            <li><a href="o-nas.html">O nas</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </div>
-
         <div>
-          <h4 class="footer-title">Capabilities</h4>
+          <h4 class="footer-col-title">Zakres prac</h4>
           <ul class="footer-links">
-            <li><a href="services.html#welding">MIG/MAG &amp; TIG Welding</a></li>
-            <li><a href="services.html#painting">Airless Spray Painting</a></li>
-            <li><a href="services.html#cnc">Large CNC Machining</a></li>
-            <li><a href="services.html#cad">3D CAD Design &amp; 2D Drawings</a></li>
-            <li><a href="services.html#quality">Quality Assurance &amp; Tests</a></li>
+            <li><a href="oferta.html#spawanie">Spawanie (MIG/MAG &amp; TIG)</a></li>
+            <li><a href="services.html#malowanie">Blasting &amp; Coating</a></li>
+            <li><a href="oferta.html#cnc">Obróbka CNC i cięcie blach</a></li>
+            <li><a href="services.html#cad">3D CAD Design &amp; DFM</a></li>
+            <li><a href="services.html#jakosc">Quality Assurance &amp; 3.1</a></li>
           </ul>
         </div>
-
         <div>
-          <h4 class="footer-title">Contact</h4>
-          <ul class="footer-links">
-            <li><a href="tel:+48881424247">+48 881 424 247</a></li>
-            <li><a href="mailto:biuro@alynx.com.pl">biuro@alynx.com.pl</a></li>
-            <li style="color: #94A3B8; font-size: 0.88rem; line-height: 1.5; margin-top: 4px;">
-              ul. Zdzisława Malickiego 118<br>
-              37-450 Stalowa Wola, Poland
-            </li>
-          </ul>
+          <h4 class="footer-col-title">Contact</h4>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem;">
+            <div>Sebastian Ajryś</div>
+            <div>Phone: <a href="tel:+48881424247" style="color: var(--primary); font-weight: 600;">+48 881 424 247</a></div>
+            <div>E-mail: <a href="mailto:biuro@alynx.com.pl">biuro@alynx.com.pl</a></div>
+            <div style="color: #64748B; margin-top: 4px;">ul. Zdzisława Malickiego 118<br>37-450 Stalowa Wola, Poland</div>
+          </div>
         </div>
       </div>
-
       <div class="footer-bottom">
         <div>&copy; <span id="currentYear">2026</span> ALYNX Engineering Sp. z o.o. All rights reserved.</div>
-        <div style="display: flex; gap: 16px; align-items: center;">
-          <a href="../kontakt.html" hreflang="pl">Polska wersja (PL)</a>
-          <a href="contact.html">Privacy &amp; Contact</a>
-        </div>
+        <div>Stalowa Wola, Poland</div>
       </div>
     </div>
   </footer>

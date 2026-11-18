@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects &amp; Portfolio — ALYNX Engineering | Steel Fabrication</title>
-  <meta name="description" content="Explore real projects and steel fabrication work executed at ALYNX Engineering in Stalowa Wola, Poland. MIG/MAG welding, beam assemblies, and tooling.">
+  <title>Realizacje — ALYNX Engineering | Spawanie i konstrukcje stalowe</title>
+  <meta name="description" content="Realizacje ALYNX Engineering w Stalowej Woli. Zobacz autentyczne zdjęcia wykonanych konstrukcji stalowych, spawania MIG/MAG i TIG oraz oprzyrządowania.">
   
+  <!-- Identyfikacja dla Google, Chrome i PWA (Miniaturki i skróty "ALYNX") -->
   <meta name="application-name" content="ALYNX">
   <meta name="apple-mobile-web-app-title" content="ALYNX">
   <meta property="og:site_name" content="ALYNX Engineering">
-  <meta property="og:title" content="Projects &amp; Portfolio — ALYNX Engineering">
-  <meta property="og:description" content="Authentic photos from our fabrication workshop in Stalowa Wola: welded beam assemblies, precision fit-up and weld seam quality.">
+  <meta property="og:title" content="Realizacje — ALYNX Engineering">
+  <meta property="og:description" content="Autentyczne realizacje konstrukcji stalowych i spawalnictwa w ALYNX Engineering w Stalowej Woli.">
   <meta property="og:image" content="../assets/images/logo.png">
   <link rel="manifest" href="../site.webmanifest">
   <link rel="alternate" hreflang="pl" href="../realizacje.html">
@@ -46,11 +47,6 @@
           </svg>
           ul. Zdzisława Malickiego 118, 37-450 Stalowa Wola, Poland
         </span>
-        <div class="lang-switcher" aria-label="Language selection">
-          <a href="../realizacje.html" class="lang-item" hreflang="pl" title="Polska wersja">PL</a>
-          <span class="lang-separator">/</span>
-          <span class="lang-item active">EN</span>
-        </div>
       </div>
     </div>
   </div>
@@ -58,11 +54,11 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo-btn" title="ALYNX Engineering — Home">
+      <a href="index.html" class="logo-btn" title="ALYNX Engineering — Homepage">
         <img src="../assets/images/logo.png" alt="ALYNX Engineering">
       </a>
 
-      <nav aria-label="Main navigation">
+      <nav aria-label="Menu strony">
         <ul class="nav-menu" id="navMenu">
           <li><a href="services.html" class="nav-link">Services</a></li>
           <li><a href="projects.html" class="nav-link active">Projects</a></li>
@@ -79,25 +75,29 @@
               Call: +48 881 424 247
             </a>
           </li>
-          <li class="mobile-only-action" style="padding-top: 10px; border-top: 1px solid var(--gray-border); display: flex; justify-content: center;">
-            <div class="lang-switcher" aria-label="Language selection">
-              <a href="../realizacje.html" class="lang-item" hreflang="pl">PL</a>
-              <span class="lang-separator">/</span>
-              <span class="lang-item active">EN</span>
-            </div>
-          </li>
         </ul>
       </nav>
 
       <div style="display: flex; align-items: center; gap: 12px;">
-        <div class="lang-switcher" aria-label="Language selection">
-          <a href="../realizacje.html" class="lang-item" hreflang="pl" title="Polska wersja">PL</a>
-          <span class="lang-separator">/</span>
-          <span class="lang-item active">EN</span>
-        </div>
-
+        <a href="./projects.html" class="lang-flag-btn" hreflang="en" title="English version" aria-label="Switch to English">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="22" height="14" class="flag-icon" aria-hidden="true">
+            <clipPath id="uk-flag-clip-realizacje">
+              <path d="M0 0v30h60V0z"/>
+            </clipPath>
+            <clipPath id="uk-flag-cross-realizacje">
+              <path d="M30 15h30v15zv15h-30zh-30v-15zv-15h30z"/>
+            </clipPath>
+            <g clip-path="url(#uk-flag-clip-realizacje)">
+              <path d="M0 0v30h60V0z" fill="#012169"/>
+              <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/>
+              <path d="M0 0l60 30m0-30L0 30" clip-path="url(#uk-flag-cross-realizacje)" stroke="#C8102E" stroke-width="4"/>
+              <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/>
+              <path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/>
+            </g>
+          </svg>
+          <span>EN</span>
+        </a>
         <a href="contact.html" class="header-cta-btn">Request a Quote</a>
-        
         <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
@@ -111,61 +111,61 @@
   <section class="page-hero">
     <div class="container">
       <div class="breadcrumbs">
-        <a href="index.html">Home</a>
+        <a href="index.html">Homepage</a>
         <span>/</span>
         <span>Projects</span>
       </div>
-      <h1 class="page-hero-title">Our Projects &amp; Fabrication Work</h1>
+      <h1 class="page-hero-title">Our Projects &amp; Workshop Gallery</h1>
       <p class="page-hero-desc">
-        Authentic documentation of steel structures, machine chassis, and custom tooling fabricated at our plant in Stalowa Wola, Poland.
+        Visual documentation of fabrication projects and steel structures manufactured at ALYNX Engineering in Stalowa Wola.
       </p>
     </div>
   </section>
 
-  <!-- PROJECTS GALLERY -->
+  <!-- STATUS REALIZACJI / GALERIA -->
   <main class="section">
     <div class="container">
       
       <div style="max-width: 840px; margin: 0 auto 36px auto; text-align: center;">
         <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7;">
-          Here is a first look at ongoing fabrication in our Stalowa Wola workshop. In accordance with our company philosophy, we display only genuine photographs of our own welding, fitting, and structural work.
+          We present authentic workshop photographs from ongoing fabrication at our facility in Stalowa Wola. Shown are real assembly stages, tight component fitting, multi-pass welding, and strict dimensional verification.
         </p>
       </div>
 
-      <!-- Gallery Grid with Lightbox triggers -->
+      <!-- Galeria zdjęć z realizacji -->
       <div class="gallery-grid" style="margin-bottom: 40px;">
         <div class="gallery-item">
           <div class="gallery-img-wrap">
-            <img src="../assets/images/realizacje/realizacja-01.jpg" alt="Heavy structural beam assembly — fabrication and alignment under a 5-ton crane" data-lightbox="../assets/images/realizacje/realizacja-01.jpg" data-caption="Heavy structural beam assembly — fabrication and alignment under a 5-ton crane in the Stalowa Wola workshop" style="cursor: pointer;">
+            <img src="../assets/images/realizacje/realizacja-01.jpg" alt="Structural beam assembly — fitting and welding under 5-ton overhead crane" data-lightbox="../assets/images/realizacje/realizacja-01.jpg" data-caption="Structural beam assembly — fitting and welding under 5-ton overhead crane in Stalowa Wola" style="cursor: pointer;">
           </div>
           <div class="gallery-info">
-            <div class="gallery-title">Structural Beam Assembly — Crane Alignment</div>
-            <div class="gallery-sub">Carbon steel fabrication • 5t overhead crane • Strict dimensional verification</div>
+            <div class="gallery-title">Heavy Beam Structure — Assembly Under Overhead Crane</div>
+            <div class="gallery-sub">Carbon steel structural welding • 5t Crane • Dimensional inspection</div>
           </div>
         </div>
 
         <div class="gallery-item">
           <div class="gallery-img-wrap">
-            <img src="../assets/images/realizacje/realizacja-02.jpg" alt="Internal stiffeners, rib alignment and precision weld preparation" data-lightbox="../assets/images/realizacje/realizacja-02.jpg" data-caption="Internal stiffeners, rib alignment and precision weld preparation on assembly trestles" style="cursor: pointer;">
+            <img src="../assets/images/realizacje/realizacja-02.jpg" alt="Precision fit-up and ribbing of heavy welded steel structure" data-lightbox="../assets/images/realizacje/realizacja-02.jpg" data-caption="Precision fit-up and internal stiffening ribs on assembly workstation" style="cursor: pointer;">
           </div>
           <div class="gallery-info">
-            <div class="gallery-title">Rib Stiffeners &amp; Fit-Up Alignment</div>
-            <div class="gallery-sub">Multi-pass MIG/MAG welding • Maintaining geometric tolerances</div>
+            <div class="gallery-title">Użebrowanie i pasowanie elementów</div>
+            <div class="gallery-sub">Spawanie wielościegowe MIG/MAG • Zachowanie tolerancji geometrycznych</div>
           </div>
         </div>
 
         <div class="gallery-item">
           <div class="gallery-img-wrap">
-            <img src="../assets/images/realizacje/realizacja-03.jpg" alt="High-quality multi-pass weld profile and CNC-milled pocket in heavy steel plate" data-lightbox="../assets/images/realizacje/realizacja-03.jpg" data-caption="High-quality multi-pass weld profile and CNC-milled pocket in heavy steel plate" style="cursor: pointer;">
+            <img src="../assets/images/realizacje/realizacja-03.jpg" alt="Detal spoiny oraz frezowane gniazdo montażowe w grubej blasze" data-lightbox="../assets/images/realizacje/realizacja-03.jpg" data-caption="Detal spoiny oraz frezowane gniazdo montażowe w grubej blasze — estetyka i jakość wykończenia spoin" style="cursor: pointer;">
           </div>
           <div class="gallery-info">
-            <div class="gallery-title">Weld Quality &amp; Machined Pockets</div>
-            <div class="gallery-sub">Clean weld seam transitions • Integrated mechanical machining</div>
+            <div class="gallery-title">Jakość spoin i frezowane gniazda</div>
+            <div class="gallery-sub">Wysoka jakość lica spoiny • Obróbka mechaniczna gniazd</div>
           </div>
         </div>
       </div>
 
-      <!-- Information about upcoming categorized project galleries -->
+      <!-- Informacja o planowanym podziale na projekty -->
       <div style="background-color: var(--bg-alt); border: 1px solid var(--gray-border); border-radius: var(--radius); padding: 28px 32px; max-width: 880px; margin: 0 auto; box-shadow: var(--shadow-sm);">
         <div style="display: flex; gap: 16px; align-items: flex-start;">
           <div style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
@@ -175,24 +175,23 @@
           </div>
           <div>
             <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin-bottom: 6px;">
-              Upcoming Project Case Studies in Preparation
+              Kolejne projekty w przygotowaniu
             </h4>
             <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin: 0;">
-              We are actively preparing dedicated project case studies structured by category (including welded transport carts, machinery bedplates, conveyor systems, and custom welding fixtures). Each project will include a full photo series documenting individual stages of fabrication.
+              Aktualnie opracowujemy dedykowane karty projektowe z podziałem na kategorie (m.in. wózki spawane, ramy technologiczne, linie transportowe oraz oprzyrządowanie spawalnicze). Wkrótce po kliknięciu w poszczególny projekt będzie można obejrzeć pełną galerię zdjęć z poszczególnych faz wytwarzania.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- CTA Box -->
       <div style="margin-top: 50px; background-color: var(--primary-subtle); border: 1px solid #BBF7D0; border-radius: var(--radius); padding: 32px; text-align: center;">
         <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-main); margin-bottom: 8px;">
-          Do you have a structural steel or machinery manufacturing project?
+          Planujesz wykonanie konstrukcji lub linii produkcyjnej?
         </h3>
         <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
-          We would be glad to evaluate your engineering drawings or specifications and suggest the optimal manufacturing process.
+          Chętnie ocenimy Twój rysunek lub założenia projektowe i zaproponujemy optymalną technologię wykonania.
         </p>
-        <a href="contact.html" class="btn btn-primary">Contact Us for a Quote</a>
+        <a href="kontakt.html" class="btn btn-primary">Skontaktuj się z nami</a>
       </div>
 
     </div>
@@ -207,52 +206,42 @@
             <img src="../assets/images/logo.png" alt="ALYNX Engineering" class="footer-logo">
           </a>
           <p class="footer-about">
-            ALYNX Engineering Sp. z o.o. — Welded steel structures, turnkey production lines, industrial airless painting, and 3D CAD design in Stalowa Wola, Poland.
+            ALYNX Engineering Sp. z o.o. — Konstrukcje stalowe, linie produkcyjne, malarnia hydrodynamiczna oraz projektowanie CAD w Stalowej Woli.
           </p>
-          <div style="font-size: 0.82rem; color: #64748B;">VAT ID (NIP): PL8652594538</div>
+          <div style="font-size: 0.82rem; color: #64748B;">NIP: 8652594538</div>
         </div>
-
         <div>
-          <h4 class="footer-title">Navigation</h4>
+          <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services &amp; Capabilities</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact &amp; RFQ</a></li>
+            <li><a href="oferta.html">Oferta</a></li>
+            <li><a href="realizacje.html">Realizacje</a></li>
+            <li><a href="o-nas.html">O nas</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </div>
-
         <div>
-          <h4 class="footer-title">Capabilities</h4>
+          <h4 class="footer-col-title">Zakres prac</h4>
           <ul class="footer-links">
-            <li><a href="services.html#welding">MIG/MAG &amp; TIG Welding</a></li>
-            <li><a href="services.html#painting">Airless Spray Painting</a></li>
-            <li><a href="services.html#cnc">Large CNC Machining</a></li>
-            <li><a href="services.html#cad">3D CAD Design &amp; 2D Drawings</a></li>
-            <li><a href="services.html#quality">Quality Assurance &amp; Tests</a></li>
+            <li><a href="oferta.html#spawanie">Spawanie (MIG/MAG &amp; TIG)</a></li>
+            <li><a href="services.html#malowanie">Blasting &amp; Coating</a></li>
+            <li><a href="oferta.html#cnc">Obróbka CNC i cięcie blach</a></li>
+            <li><a href="services.html#cad">3D CAD Design &amp; DFM</a></li>
+            <li><a href="services.html#jakosc">Quality Assurance &amp; 3.1</a></li>
           </ul>
         </div>
-
         <div>
-          <h4 class="footer-title">Contact</h4>
-          <ul class="footer-links">
-            <li><a href="tel:+48881424247">+48 881 424 247</a></li>
-            <li><a href="mailto:biuro@alynx.com.pl">biuro@alynx.com.pl</a></li>
-            <li style="color: #94A3B8; font-size: 0.88rem; line-height: 1.5; margin-top: 4px;">
-              ul. Zdzisława Malickiego 118<br>
-              37-450 Stalowa Wola, Poland
-            </li>
-          </ul>
+          <h4 class="footer-col-title">Contact</h4>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem;">
+            <div>Sebastian Ajryś</div>
+            <div>Phone: <a href="tel:+48881424247" style="color: var(--primary); font-weight: 600;">+48 881 424 247</a></div>
+            <div>E-mail: <a href="mailto:biuro@alynx.com.pl">biuro@alynx.com.pl</a></div>
+            <div style="color: #64748B; margin-top: 4px;">ul. Zdzisława Malickiego 118<br>37-450 Stalowa Wola, Poland</div>
+          </div>
         </div>
       </div>
-
       <div class="footer-bottom">
         <div>&copy; <span id="currentYear">2026</span> ALYNX Engineering Sp. z o.o. All rights reserved.</div>
-        <div style="display: flex; gap: 16px; align-items: center;">
-          <a href="../realizacje.html" hreflang="pl">Polska wersja (PL)</a>
-          <a href="contact.html">Privacy &amp; Contact</a>
-        </div>
+        <div>Stalowa Wola, Poland</div>
       </div>
     </div>
   </footer>

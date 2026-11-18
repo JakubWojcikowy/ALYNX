@@ -18,10 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
       </svg>`;
 
+    const isEn = document.documentElement.lang === 'en';
+
     function closeMobileMenu() {
       navMenu.classList.remove('open');
       mobileBtn.setAttribute('aria-expanded', 'false');
-      mobileBtn.setAttribute('aria-label', 'Otwórz menu');
+      mobileBtn.setAttribute('aria-label', isEn ? 'Open menu' : 'Otwórz menu');
       mobileBtn.innerHTML = iconHamburger;
     }
 
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       const isOpen = navMenu.classList.toggle('open');
       mobileBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      mobileBtn.setAttribute('aria-label', isOpen ? 'Zamknij menu' : 'Otwórz menu');
+      mobileBtn.setAttribute('aria-label', isEn ? (isOpen ? 'Close menu' : 'Open menu') : (isOpen ? 'Zamknij menu' : 'Otwórz menu'));
       mobileBtn.innerHTML = isOpen ? iconClose : iconHamburger;
     }
 
@@ -93,15 +95,37 @@ document.addEventListener('DOMContentLoaded', () => {
       const service = document.getElementById('cService')?.value || 'Zapytanie ogólne';
       const message = document.getElementById('cMessage')?.value || '';
 
-      const subject = encodeURIComponent(`[Zapytanie ze strony ALYNX] - ${service} - ${name}`);
-      const body = encodeURIComponent(`Dzień dobry,
+      const isEn = document.documentElement.lang === 'en';
+      const defaultTopic = isEn ? 'General Inquiry' : 'Zapytanie ogólne';
+      const serviceVal = service || defaultTopic;
+
+      const subject = encodeURIComponent(isEn 
+        ? `[Website Inquiry ALYNX] - ${serviceVal} - ${name}`
+        : `[Zapytanie ze strony ALYNX] - ${serviceVal} - ${name}`);
+
+      const body = encodeURIComponent(isEn 
+        ? `Hello ALYNX Engineering Team,
+
+I am submitting an inquiry via the ALYNX Engineering website:
+
+- Full Name / Company: ${name}
+- Phone: ${phone}
+- Email: ${email}
+- Inquiry Topic: ${serviceVal}
+
+Project Details / Scope:
+${message}
+
+Best regards,
+${name}`
+        : `Dzień dobry,
 
 Wysyłam zapytanie za pośrednictwem strony internetowej ALYNX Engineering:
 
 - Imię i nazwisko / Firma: ${name}
 - Telefon: ${phone}
 - E-mail: ${email}
-- Temat: ${service}
+- Temat: ${serviceVal}
 
 Wiadomość / opis zlecenia:
 ${message}
@@ -112,7 +136,7 @@ ${name}`);
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       if (submitBtn) {
         const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Otwieranie poczty... ✓';
+        submitBtn.textContent = isEn ? 'Opening email client... ✓' : 'Otwieranie poczty... ✓';
         submitBtn.disabled = true;
         setTimeout(() => {
           submitBtn.textContent = originalText;
