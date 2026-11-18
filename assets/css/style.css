@@ -134,6 +134,71 @@ ul {
   color: #94A3B8;
 }
 
+/* Przełącznik języka (Language Switcher) */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background-color: var(--bg-alt);
+  border: 1px solid var(--gray-border);
+  border-radius: var(--radius);
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.lang-item {
+  color: #64748B;
+  text-decoration: none;
+  padding: 2px 5px;
+  border-radius: 3px;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.lang-item:hover {
+  color: var(--primary);
+}
+
+.lang-item.active {
+  color: var(--primary);
+  background-color: var(--primary-light);
+  font-weight: 800;
+  cursor: default;
+}
+
+.lang-separator {
+  color: #CBD5E1;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+/* Wersja w top barze */
+.top-bar .lang-switcher {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  padding: 3px 8px;
+}
+
+.top-bar .lang-item {
+  color: #94A3B8;
+}
+
+.top-bar .lang-item:hover {
+  color: #FFFFFF;
+}
+
+.top-bar .lang-item.active {
+  color: #FFFFFF;
+  background-color: var(--primary);
+}
+
+.top-bar .lang-separator {
+  color: rgba(255, 255, 255, 0.25);
+}
+
 /* --- Główny nagłówek (Header) --- */
 .site-header {
   position: sticky;

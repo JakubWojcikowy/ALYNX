@@ -15,6 +15,8 @@
   <meta property="og:description" content="ALYNX Engineering w Stalowej Woli. Projektujemy i wytwarzamy skomplikowane konstrukcje stalowe, linie produkcyjne, malarnia hydrodynamiczna oraz projektowanie CAD.">
   <meta property="og:image" content="./assets/images/logo.png">
   <link rel="manifest" href="./site.webmanifest">
+  <link rel="alternate" hreflang="pl" href="./index.html">
+  <link rel="alternate" hreflang="en" href="./en/index.html">
 
   <!-- Dane strukturalne Schema.org -->
   <script type="application/ld+json">
@@ -52,7 +54,7 @@
           <a href="mailto:biuro@alynx.com.pl">biuro@alynx.com.pl</a>
         </span>
       </div>
-      <div>
+      <div style="display: flex; gap: 16px; align-items: center;">
         <span class="top-bar-item">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
@@ -60,6 +62,11 @@
           </svg>
           ul. Zdzisława Malickiego 118, 37-450 Stalowa Wola
         </span>
+        <div class="lang-switcher" aria-label="Wybór języka / Language selection">
+          <span class="lang-item active">PL</span>
+          <span class="lang-separator">/</span>
+          <a href="./en/index.html" class="lang-item" hreflang="en" title="English version">EN</a>
+        </div>
       </div>
     </div>
   </div>
@@ -93,11 +100,24 @@
               Zadzwoń: +48 881 424 247
             </a>
           </li>
+          <li class="mobile-only-action" style="padding-top: 10px; border-top: 1px solid var(--gray-border); display: flex; justify-content: center;">
+            <div class="lang-switcher" aria-label="Wybór języka">
+              <span class="lang-item active">PL</span>
+              <span class="lang-separator">/</span>
+              <a href="./en/index.html" class="lang-item" hreflang="en">EN</a>
+            </div>
+          </li>
         </ul>
       </nav>
 
-      <!-- Przycisk szybkiej akcji -->
+      <!-- Przycisk szybkiej akcji i przełącznik języka -->
       <div style="display: flex; align-items: center; gap: 12px;">
+        <div class="lang-switcher" aria-label="Wybór języka / Language selection">
+          <span class="lang-item active">PL</span>
+          <span class="lang-separator">/</span>
+          <a href="./en/index.html" class="lang-item" hreflang="en" title="English version">EN</a>
+        </div>
+
         <a href="kontakt.html" class="header-cta-btn">Darmowa wycena</a>
         
         <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Otwórz menu">
@@ -592,8 +612,8 @@
         <div>
           &copy; <span id="currentYear">2026</span> ALYNX Engineering Sp. z o.o. Wszelkie prawa zastrzeżone.
         </div>
-        <div>
-          Stalowa Wola
+        <div style="display: flex; gap: 16px; align-items: center;">
+          <a href="./en/index.html" hreflang="en">English version (EN)</a>
         </div>
       </div>
 

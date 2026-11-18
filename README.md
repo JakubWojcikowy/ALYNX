@@ -34,18 +34,25 @@
 
 ```text
 ALYNX/
-├── index.html                   # Strona główna
+├── index.html                   # Strona główna (wersja polska)
 ├── oferta.html                  # Szczegółowa oferta usług (5 filarów)
 ├── realizacje.html              # Podstrona Realizacje (galeria i dokumentacja projektów)
 ├── o-nas.html                   # Profil firmy, zaplecze i atuty współpracy
 ├── kontakt.html                 # Dane kontaktowe i formularz wyceny
 ├── site.webmanifest             # Metadane PWA / skrótów mobilnych (ALYNX)
 ├── README.md                    # Dokumentacja projektu
+├── en/                          # Wersja angielska (English Edition)
+│   ├── index.html               # Homepage (EN)
+│   ├── services.html            # Services / Engineering capabilities (EN)
+│   ├── projects.html            # Projects & workshop gallery (EN)
+│   ├── about.html               # About ALYNX Engineering (EN)
+│   ├── contact.html             # Contact & RFQ form (EN)
+│   └── (oferta/realizacje/o-nas/kontakt.html) # Przekierowania zabezpieczające
 └── assets/
     ├── css/
     │   └── style.css            # Arkusz stylów (Mobile-first RWD, Forest Green & Slate)
     ├── js/
-    │   └── main.js              # Nawigacja mobilna, płynne przewijanie, lightbox, formularz
+    │   └── main.js              # Nawigacja mobilna, przełącznik języków, lightbox, formularz
     └── images/
         ├── logo.png             # Oficjalne logo z przezroczystym tłem (header/footer)
         ├── favicon.png          # Ikona karty przeglądarki
@@ -57,14 +64,31 @@ ALYNX/
 
 ---
 
+## 🌐 Przełączanie Wersji Językowych (PL / EN)
+
+Serwis posiada dwujęzyczną strukturę z bezpośrednim, 1-kliknięciowym przełącznikiem:
+* **PL / EN w pasku górnym (`top-bar`) oraz nagłówku (`header-inner`)** na każdej podstronie.
+* **Wersja mobilna:** kompaktowy przełącznik `PL | EN` obok przycisku menu na telefonie oraz wewnątrz wysuwanego menu bocznego.
+* **Mapowanie podstron 1:1:**
+  * `index.html` ↔ `en/index.html`
+  * `oferta.html` ↔ `en/services.html`
+  * `realizacje.html` ↔ `en/projects.html`
+  * `o-nas.html` ↔ `en/about.html`
+  * `kontakt.html` ↔ `en/contact.html`
+* Wszystkie ścieżki do zasobów (`assets/`) w podkatalogu `en/` korzystają ze ścieżek relatywnych `../assets/...`, co gwarantuje 100% kompatybilność z dowolnym serwerem i lokalnym otwieraniem plików w przeglądarce.
+
+---
+
 ## 🚀 Wdrożenie na Hostido (Krok po kroku)
 
 1. **Zaloguj się do panelu Hostido** (DirectAdmin / cPanel) i otwórz **Menadżer Plików** (lub połącz się przez FTP / FileZilla).
 2. Wejdź do katalogu publicznego swojej domeny (najczęściej `public_html`).
-3. **Wgraj wyłącznie pliki produkcyjne strony**:
-   * Wszystkie 5 plików HTML: `index.html`, `oferta.html`, `realizacje.html`, `o-nas.html`, `kontakt.html`
-   * Cały folder `assets/` wraz z podfolderami (`css/`, `js/`, `images/`).
-   *(Folder `materiały/`, `Obszar roboczy 1.png` oraz `README.md` są plikami roboczymi/źródłowymi i nie muszą być kopiowane na serwer WWW).*
+3. **Wgraj pliki produkcyjne strony**:
+   * Pliki HTML wersji polskiej: `index.html`, `oferta.html`, `realizacje.html`, `o-nas.html`, `kontakt.html`
+   * Cały folder wersji angielskiej `en/` wraz z zawartością
+   * Cały folder `assets/` wraz z podfolderami (`css/`, `js/`, `images/`)
+   * Plik `site.webmanifest`
+   *(Foldery `materiały/`, `główna/`, `realizacje/` oraz `README.md` są plikami roboczymi/źródłowymi i nie muszą być kopiowane na serwer WWW).*
 4. Strona działa natychmiast pod Twoją domeną — bez bazy danych, PHP i budowania po stronie serwera.
 
 ---
