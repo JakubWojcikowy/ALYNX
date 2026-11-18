@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Realizacje — Galeria projektów w przygotowaniu | ALYNX Engineering</title>
-  <meta name="description" content="Realizacje ALYNX Engineering w Stalowej Woli. Dział w trakcie aktualizacji — wkrótce opublikujemy autentyczne zdjęcia konstrukcji stalowych, linii produkcyjnych i oprzyrządowania.">
+  <title>Realizacje — ALYNX Engineering | Spawanie i konstrukcje stalowe</title>
+  <meta name="description" content="Realizacje ALYNX Engineering w Stalowej Woli. Zobacz autentyczne zdjęcia wykonanych konstrukcji stalowych, spawania MIG/MAG i TIG oraz oprzyrządowania.">
+  
+  <!-- Identyfikacja dla Google, Chrome i PWA (Miniaturki i skróty "ALYNX") -->
+  <meta name="application-name" content="ALYNX">
+  <meta name="apple-mobile-web-app-title" content="ALYNX">
+  <meta property="og:site_name" content="ALYNX Engineering">
+  <meta property="og:title" content="Realizacje — ALYNX Engineering">
+  <meta property="og:description" content="Autentyczne realizacje konstrukcji stalowych i spawalnictwa w ALYNX Engineering w Stalowej Woli.">
+  <meta property="og:image" content="./assets/images/logo.png">
+  <link rel="manifest" href="./site.webmanifest">
+
   <link rel="icon" type="image/png" href="./assets/images/favicon.png">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -92,24 +102,65 @@
     </div>
   </section>
 
-  <!-- STATUS REALIZACJI -->
+  <!-- STATUS REALIZACJI / GALERIA -->
   <main class="section">
     <div class="container">
       
-      <div class="portfolio-placeholder">
-        <div class="portfolio-placeholder-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
-          </svg>
-        </div>
-        <h3>Dział w trakcie realizacji</h3>
-        <p>
-          Na stronie ALYNX Engineering prezentujemy wyłącznie rzetelne i sprawdzone informacje o naszej działalności. Aktualnie zbieramy i opracowujemy dokumentację fotograficzną z naszej hali produkcyjnej — wkrótce opublikujemy tutaj rzeczywiste zdjęcia wykonanych konstrukcji stalowych, linii produkcyjnych i oprzyrządowania.
+      <div style="max-width: 840px; margin: 0 auto 36px auto; text-align: center;">
+        <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7;">
+          Prezentujemy pierwsze, autentyczne fotografie z bieżącej produkcji na naszej hali w Stalowej Woli. Przedstawiamy rzeczywiste etapy prac montażowych, precyzyjne pasowanie elementów, spawanie wielościegowe oraz dbałość o geometrię i jakość wykończenia spoin.
         </p>
-        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-          <a href="oferta.html" class="btn btn-outline">Zobacz naszą ofertę</a>
-          <a href="kontakt.html" class="btn btn-primary">Prześlij projekt do wyceny</a>
+      </div>
+
+      <!-- Galeria zdjęć z realizacji -->
+      <div class="gallery-grid" style="margin-bottom: 40px;">
+        <div class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="./assets/images/realizacje/realizacja-01.jpg" alt="Konstrukcja belkowa — montaż i spawanie z wykorzystaniem suwnicy 5 ton" data-lightbox="./assets/images/realizacje/realizacja-01.jpg" data-caption="Konstrukcja belkowa — montaż i spawanie pod suwnicą 5 ton na hali produkcyjnej w Stalowej Woli" style="cursor: pointer;">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">Konstrukcja belkowa — montaż pod suwnicą</div>
+            <div class="gallery-sub">Spawanie konstrukcji ze stali węglowej • Suwnica 5t • Kontrola wymiarowa</div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="./assets/images/realizacje/realizacja-02.jpg" alt="Precyzyjne pasowanie elementów i użebrowanie konstrukcji stalowej" data-lightbox="./assets/images/realizacje/realizacja-02.jpg" data-caption="Precyzyjne pasowanie elementów i użebrowanie konstrukcji stalowej na stanowisku montażowym" style="cursor: pointer;">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">Użebrowanie i pasowanie elementów</div>
+            <div class="gallery-sub">Spawanie wielościegowe MIG/MAG • Zachowanie tolerancji geometrycznych</div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="./assets/images/realizacje/realizacja-03.jpg" alt="Detal spoiny oraz frezowane gniazdo montażowe w grubej blasze" data-lightbox="./assets/images/realizacje/realizacja-03.jpg" data-caption="Detal spoiny oraz frezowane gniazdo montażowe w grubej blasze — estetyka i jakość wykończenia spoin" style="cursor: pointer;">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">Jakość spoin i frezowane gniazda</div>
+            <div class="gallery-sub">Wysoka jakość lica spoiny • Obróbka mechaniczna gniazd</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informacja o planowanym podziale na projekty -->
+      <div style="background-color: var(--bg-alt); border: 1px solid var(--gray-border); border-radius: var(--radius); padding: 28px 32px; max-width: 880px; margin: 0 auto; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; gap: 16px; align-items: flex-start;">
+          <div style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 22px; height: 22px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+            </svg>
+          </div>
+          <div>
+            <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin-bottom: 6px;">
+              Kolejne projekty w przygotowaniu
+            </h4>
+            <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin: 0;">
+              Aktualnie opracowujemy dedykowane karty projektowe z podziałem na kategorie (m.in. wózki spawane, ramy technologiczne, linie transportowe oraz oprzyrządowanie spawalnicze). Wkrótce po kliknięciu w poszczególny projekt będzie można obejrzeć pełną galerię zdjęć z poszczególnych faz wytwarzania.
+            </p>
+          </div>
         </div>
       </div>
 

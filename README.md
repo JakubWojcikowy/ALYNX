@@ -11,7 +11,7 @@
 
 ## 🏭 O firmie ALYNX Engineering
 
-**ALYNX Engineering Sp. z o.o.** to nowoczesna firma inżynieryjno-produkcyjna zlokalizowana w samym sercu strefy przemysłowej w Stalowej Woli. Zakład specjalizuje się w projektowaniu oraz wytwarzaniu skomplikowanych konstrukcji stalowych, kompletnych linii produkcyjnych, części maszyn oraz oprzyrządowania dla przemysłu kolejowego, energetycznego, offshore, zbrojeniowego, budowlanego i spożywczego.
+**ALYNX Engineering Sp. z o.o.** to firma inżynieryjno-produkcyjna ze Stalowej Woli. Zakład specjalizuje się w projektowaniu oraz wytwarzaniu skomplikowanych konstrukcji stalowych, kompletnych linii produkcyjnych, części maszyn oraz oprzyrządowania dla przemysłu kolejowego, energetycznego, offshore, zbrojeniowego, budowlanego i spożywczego.
 
 ### Główne obszary działalności
 * **Spawanie i produkcja specjalistycznych konstrukcji stalowych (MIG/MAG & TIG)** — stal węglowa, nierdzewna oraz kwasoodporna; praca na hali z dwiema suwnicami 5t i profesjonalnych stołach spawalniczych.
@@ -36,21 +36,23 @@
 ALYNX/
 ├── index.html                   # Strona główna
 ├── oferta.html                  # Szczegółowa oferta usług (5 filarów)
-├── realizacje.html              # Podstrona Realizacje (w trakcie przygotowania zdjęć)
+├── realizacje.html              # Podstrona Realizacje (galeria i dokumentacja projektów)
 ├── o-nas.html                   # Profil firmy, zaplecze i atuty współpracy
 ├── kontakt.html                 # Dane kontaktowe i formularz wyceny
+├── site.webmanifest             # Metadane PWA / skrótów mobilnych (ALYNX)
 ├── README.md                    # Dokumentacja projektu
 └── assets/
     ├── css/
     │   └── style.css            # Arkusz stylów (Mobile-first RWD, Forest Green & Slate)
     ├── js/
-    │   └── main.js              # Nawigacja mobilna, płynne przewijanie, obsługa formularza
+    │   └── main.js              # Nawigacja mobilna, płynne przewijanie, lightbox, formularz
     └── images/
         ├── logo.png             # Oficjalne logo z przezroczystym tłem (header/footer)
         ├── favicon.png          # Ikona karty przeglądarki
         ├── hero/                # Tło sekcji powitalnej
-        ├── services/            # Zdjęcia ilustrujące poszczególne obszary oferty
-        └── tables/              # Schemat techniczny zaplecza produkcyjnego (SVG)
+        ├── services/            # Zdjęcia ilustrujące poszczególne obszary oferty (w tym spawanie)
+        ├── tables/              # Zdjęcie hali (suwnice 5t) i schemat techniczny (SVG)
+        └── realizacje/          # Autentyczne zdjęcia z montażu konstrukcji stalowych
 ```
 
 ---

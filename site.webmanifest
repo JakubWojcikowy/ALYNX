@@ -1,0 +1,16 @@
+{
+  "name": "ALYNX Engineering",
+  "short_name": "ALYNX",
+  "description": "Konstrukcje stalowe, linie produkcyjne, malarnia hydrodynamiczna oraz projektowanie CAD w Stalowej Woli",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#15803D",
+  "icons": [
+    {
+      "src": "./assets/images/favicon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}

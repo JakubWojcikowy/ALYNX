@@ -3,10 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALYNX Engineering — Konstrukcje stalowe, linie produkcyjne i CAD | Stalowa Wola</title>
+  <title>ALYNX Engineering — Konstrukcje stalowe, linie produkcyjne i spawalnictwo</title>
   <meta name="description" content="ALYNX Engineering w Stalowej Woli. Projektujemy i wytwarzamy skomplikowane konstrukcje stalowe, kompletne linie produkcyjne, urządzenia, części maszyn oraz oprzyrządowanie.">
   <meta name="keywords" content="spawanie stalowa wola, konstrukcje stalowe, linie produkcyjne, malowanie hydrodynamiczne, śrutowanie, obróbka CNC, projektowanie CAD, ALYNX Engineering, Sebastian Ajryś">
   
+  <!-- Identyfikacja dla Google, Chrome i PWA (Miniaturki i skróty "ALYNX") -->
+  <meta name="application-name" content="ALYNX">
+  <meta name="apple-mobile-web-app-title" content="ALYNX">
+  <meta property="og:site_name" content="ALYNX Engineering">
+  <meta property="og:title" content="ALYNX Engineering — Konstrukcje stalowe i linie produkcyjne">
+  <meta property="og:description" content="ALYNX Engineering w Stalowej Woli. Projektujemy i wytwarzamy skomplikowane konstrukcje stalowe, linie produkcyjne, malarnia hydrodynamiczna oraz projektowanie CAD.">
+  <meta property="og:image" content="./assets/images/logo.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <!-- Dane strukturalne Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ALYNX",
+    "alternateName": ["ALYNX Engineering", "ALYNX Engineering Sp. z o.o."],
+    "url": "https://alynx.com.pl/"
+  }
+  </script>
+
   <!-- Favicon & Arkusz Stylów -->
   <link rel="icon" type="image/png" href="./assets/images/favicon.png">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -147,7 +167,7 @@
         <!-- Usługa 1 -->
         <a href="oferta.html#spawanie" class="service-card">
           <div class="service-image">
-            <img src="./assets/images/services/service-welding.jpg" alt="Spawanie i produkcja konstrukcji stalowych na stołach spawalniczych">
+            <img src="./assets/images/services/service-welding.jpg" alt="Stanowisko spawalnicze MIG/MAG i TIG ALYNX z modularnym stołem 3D, urządzeniem spawalniczym EWM oraz suwnicą 5t">
           </div>
           <div class="service-content">
             <h3 class="service-title">Spawanie i produkcja konstrukcji stalowych (MIG/MAG &amp; TIG)</h3>
@@ -236,16 +256,17 @@
         <div>
           <h3>Zaplecze produkcyjne w przemysłowym sercu Stalowej Woli</h3>
           <p>
-            Dysponujemy nowoczesną halą produkcyjną wyposażoną w dwie suwnice o udźwigu 5 ton, profesjonalne modułowe stoły spawalnicze i montażowe oraz własną automatyczną śrutownię i wydajną malarnię hydrodynamiczną. Zapewniamy bezpieczną manipulację gabarytowymi elementami i zachowanie ścisłych tolerancji geometrycznych.
+            Dysponujemy halą produkcyjną wyposażoną w dwie suwnice ze sterowaniem radiowym o udźwigu 5 ton, profesjonalne modułowe stoły spawalnicze i montażowe oraz własną automatyczną śrutownię i wydajną malarnię hydrodynamiczną. Zapewniamy bezpieczną manipulację gabarytowymi elementami i zachowanie ścisłych tolerancji geometrycznych.
           </p>
           <div class="tables-sizes-list">
             <span class="tables-sizes-badge">Dwie suwnice o udźwigu 5 ton</span>
+            <span class="tables-sizes-badge">Sterowanie radiowe suwnic</span>
             <span class="tables-sizes-badge">Modułowe stoły spawalnicze</span>
             <span class="tables-sizes-badge">Śrutownia i malarnia hydrodynamiczna</span>
           </div>
         </div>
         <div class="tables-banner-img">
-          <img src="./assets/images/tables/facility-schematic.svg" alt="Schemat technologiczny zaplecza produkcyjnego ALYNX Engineering: dwie suwnice 5 ton, profesjonalne stoły spawalnicze oraz śrutownia i malarnia hydrodynamiczna">
+          <img src="./assets/images/tables/facility-hall.jpg" alt="Hala produkcyjna ALYNX Engineering w Stalowej Woli z dwiema suwnicami 5 ton ze sterowaniem radiowym oraz stanowiskami spawalniczymi" data-lightbox="./assets/images/tables/facility-hall.jpg" data-caption="Hala produkcyjna ALYNX Engineering w Stalowej Woli: suwnica 5 ton ze sterowaniem radiowym oraz modularne stanowiska spawalnicze" style="cursor: pointer;">
         </div>
       </div>
 
@@ -263,19 +284,46 @@
         <h2 class="section-title">Nasze Realizacje</h2>
       </div>
 
-      <div class="portfolio-placeholder">
-        <div class="portfolio-placeholder-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-          </svg>
+      <!-- Galeria pierwszych realizacji -->
+      <div class="gallery-grid" style="margin-bottom: 28px;">
+        <div class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="./assets/images/realizacje/realizacja-01.jpg" alt="Konstrukcja belkowa — montaż i spawanie z wykorzystaniem suwnicy 5t" data-lightbox="./assets/images/realizacje/realizacja-01.jpg" data-caption="Konstrukcja belkowa — montaż i spawanie z wykorzystaniem suwnicy 5 ton na hali produkcyjnej w Stalowej Woli" style="cursor: pointer;">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">Konstrukcja belkowa — montaż pod suwnicą</div>
+            <div class="gallery-sub">Spawanie konstrukcji ze stali węglowej • Suwnica 5t</div>
+          </div>
         </div>
-        <h3>Sekcja w trakcie realizacji</h3>
-        <p>
-          Na naszej stronie publikujemy wyłącznie autentyczne materiały z własnej produkcji. Aktualnie przygotowujemy dokumentację fotograficzną wykonywanych konstrukcji stalowych, maszyn i oprzyrządowania — wkrótce pojawią się tutaj gotowe realizacje.
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="./assets/images/realizacje/realizacja-02.jpg" alt="Precyzyjne pasowanie elementów i użebrowanie konstrukcji stalowej" data-lightbox="./assets/images/realizacje/realizacja-02.jpg" data-caption="Precyzyjne pasowanie elementów i użebrowanie konstrukcji stalowej na stanowisku montażowym" style="cursor: pointer;">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">Użebrowanie i pasowanie elementów</div>
+            <div class="gallery-sub">Spawanie wielościegowe • Zachowanie tolerancji wymiarowych</div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="./assets/images/realizacje/realizacja-03.jpg" alt="Detal spoiny oraz frezowane gniazdo montażowe w grubej blasze" data-lightbox="./assets/images/realizacje/realizacja-03.jpg" data-caption="Detal spoiny oraz frezowane gniazdo montażowe w grubej blasze — wysoka jakość wykończenia spoin" style="cursor: pointer;">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">Jakość spoin i frezowane gniazda</div>
+            <div class="gallery-sub">Detal wykonania • Płynne przejścia lica spoiny</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background-color: #FFFFFF; border: 1px solid var(--gray-border); border-radius: var(--radius); padding: 24px; text-align: center; box-shadow: var(--shadow-sm);">
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px; line-height: 1.6;">
+          Powyższe fotografie przedstawiają fragment bieżącej produkcji na naszej hali w Stalowej Woli. Przygotowujemy kolejne karty projektowe (m.in. wózki spawane, ramy technologiczne i oprzyrządowanie przemysłowe) z kompletną dokumentacją.
         </p>
         <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-          <a href="oferta.html" class="btn btn-outline">Zobacz pełną ofertę</a>
-          <a href="realizacje.html" class="btn btn-primary">Przejdź do Realizacji</a>
+          <a href="realizacje.html" class="btn btn-outline">Zobacz galerię realizacji</a>
+          <a href="kontakt.html" class="btn btn-primary">Prześlij zapytanie / projekt</a>
         </div>
       </div>
 
@@ -292,10 +340,10 @@
         <div class="about-text">
           <div class="section-kicker">O firmie</div>
           <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">
-            Nowoczesna firma inżynieryjno-produkcyjna
+            Firma inżynieryjno-produkcyjna ze Stalowej Woli
           </h2>
           <p>
-            <strong>ALYNX Engineering Sp. z o.o.</strong> to nowoczesna firma inżynieryjno-produkcyjna, powstała z połączenia pasji do technologii, wieloletniego doświadczenia oraz bezkompromisowej dbałości o detale. Specjalizujemy się w projektowaniu oraz wytwarzaniu skomplikowanych konstrukcji stalowych, kompletnych linii produkcyjnych oraz specjalistycznego oprzyrządowania przemysłowego.
+            <strong>ALYNX Engineering Sp. z o.o.</strong> to firma inżynieryjno-produkcyjna ze Stalowej Woli, powstała z połączenia pasji do technologii, wieloletniego doświadczenia oraz bezkompromisowej dbałości o detale. Specjalizujemy się w projektowaniu oraz wytwarzaniu skomplikowanych konstrukcji stalowych, kompletnych linii produkcyjnych oraz specjalistycznego oprzyrządowania przemysłowego.
           </p>
           <p>
             Nasza siedziba oraz zakład produkcyjny mieszczą się w samym sercu strefy przemysłowej w Stalowej Woli. Dostarczamy rozwiązania dla przemysłu: kolejowego, energetycznego, offshore, zbrojeniowego, budowlanego oraz spożywczego (ze stali nierdzewnej i kwasoodpornej).

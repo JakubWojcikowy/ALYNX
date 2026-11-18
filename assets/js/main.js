@@ -129,4 +129,58 @@ ${name}`);
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
+
+  // 5. Podgląd powiększonego zdjęcia (Lightbox Modal)
+  const lightboxTriggers = document.querySelectorAll('[data-lightbox]');
+  if (lightboxTriggers.length > 0) {
+    let lightboxModal = document.getElementById('imageLightbox');
+    if (!lightboxModal) {
+      lightboxModal = document.createElement('div');
+      lightboxModal.id = 'imageLightbox';
+      lightboxModal.className = 'lightbox-modal';
+      lightboxModal.innerHTML = `
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content">
+          <button type="button" class="lightbox-close" aria-label="Zamknij podgląd">&times;</button>
+          <img src="" alt="" class="lightbox-img" id="lightboxImg">
+          <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+      `;
+      document.body.appendChild(lightboxModal);
+
+      const closeBtn = lightboxModal.querySelector('.lightbox-close');
+      const backdrop = lightboxModal.querySelector('.lightbox-backdrop');
+
+      function closeLightbox() {
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeLightbox);
+      backdrop.addEventListener('click', closeLightbox);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+          closeLightbox();
+        }
+      });
+    }
+
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+
+    lightboxTriggers.forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const fullSrc = trigger.getAttribute('data-lightbox') || trigger.getAttribute('src');
+        const altText = trigger.getAttribute('data-caption') || trigger.getAttribute('alt') || '';
+        if (fullSrc && lightboxImg) {
+          lightboxImg.src = fullSrc;
+          lightboxImg.alt = altText;
+          if (lightboxCaption) lightboxCaption.textContent = altText;
+          lightboxModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+  }
 });
