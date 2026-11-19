@@ -194,29 +194,37 @@
         <!-- Prawa kolumna: Formularz kontaktowy -->
         <div class="form-card">
           <h3>Napisz do nas</h3>
-          <p>Wypełnij formularz — przygotuje on gotową wiadomość e-mail z Twoim zapytaniem.</p>
+          <p>Wypełnij formularz — Twoje zapytanie trafi bezpośrednio do naszego biura.</p>
 
-          <form id="contactForm">
+          <div id="formStatus" style="display: none;"></div>
+
+          <form id="contactForm" novalidate>
+            <!-- Ochrona antyspamowa i bramka Web3Forms -->
+            <input type="hidden" name="access_key" id="w3fKey" value="">
+            <input type="checkbox" name="botcheck" tabindex="-1" style="display: none;">
             
             <div class="form-row">
               <div class="form-group">
                 <label for="cName" class="form-label">Imię i nazwisko / Firma *</label>
-                <input type="text" id="cName" class="form-input" placeholder="Jan Kowalski" required>
+                <input type="text" id="cName" name="name" class="form-input" placeholder="Jan Kowalski" required>
+                <span class="form-error-msg" id="cNameError" style="display: none;"></span>
               </div>
               <div class="form-group">
                 <label for="cPhone" class="form-label">Numer telefonu *</label>
-                <input type="tel" id="cPhone" class="form-input" placeholder="+48 500 000 000" required>
+                <input type="tel" id="cPhone" name="phone" class="form-input" placeholder="+48 500 000 000" required>
+                <span class="form-error-msg" id="cPhoneError" style="display: none;"></span>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label for="cEmail" class="form-label">Adres e-mail *</label>
-                <input type="email" id="cEmail" class="form-input" placeholder="jan@example.com" required>
+                <input type="email" id="cEmail" name="email" class="form-input" placeholder="jan@example.com" required>
+                <span class="form-error-msg" id="cEmailError" style="display: none;"></span>
               </div>
               <div class="form-group">
                 <label for="cService" class="form-label">Temat zapytania</label>
-                <select id="cService" class="form-select">
+                <select id="cService" name="service" class="form-select">
                   <option value="Spawanie i konstrukcje stalowe (MIG/MAG & TIG)">Spawanie i konstrukcje stalowe (MIG/MAG &amp; TIG)</option>
                   <option value="Malowanie hydrodynamiczne i śrutowanie">Malowanie hydrodynamiczne i śrutowanie</option>
                   <option value="Obróbka CNC i cięcie blach">Wielkogabarytowa obróbka CNC i cięcie blach</option>
@@ -228,14 +236,15 @@
 
             <div class="form-group">
               <label for="cMessage" class="form-label">Wiadomość / Opis konstrukcji *</label>
-              <textarea id="cMessage" class="form-textarea" placeholder="Opisz krótko konstrukcję, wymiary, ilość sztuk oraz rodzaj materiału..." required></textarea>
+              <textarea id="cMessage" name="message" class="form-textarea" placeholder="Opisz krótko konstrukcję, wymiary, ilość sztuk oraz rodzaj materiału..." required></textarea>
+              <span class="form-error-msg" id="cMessageError" style="display: none;"></span>
             </div>
 
             <div style="font-size: 0.8rem; color: #64748B; margin-bottom: 20px;">
               * Rysunki techniczne (PDF, STEP, DXF) można również przesyłać bezpośrednio na adres: <strong>biuro@alynx.com.pl</strong>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <button type="submit" class="btn btn-primary" id="cSubmitBtn" style="width: 100%;">
               Wyślij wiadomość do wyceny
             </button>
 

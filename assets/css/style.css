@@ -1119,6 +1119,54 @@ ul {
   gap: 16px;
 }
 
+/* Walidacja pól formularza i powiadomienia */
+.form-input.is-invalid, .form-textarea.is-invalid {
+  border-color: #EF4444 !important;
+  background-color: #FEF2F2 !important;
+}
+
+.form-error-msg {
+  font-size: 0.8rem;
+  color: #DC2626;
+  margin-top: 5px;
+  display: block;
+}
+
+.form-status-alert {
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.form-status-alert.success {
+  background-color: #ECFDF5;
+  border: 1px solid #A7F3D0;
+  color: #065F46;
+}
+
+.form-status-alert.error {
+  background-color: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #991B1B;
+}
+
+.form-status-alert svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.btn.is-loading {
+  opacity: 0.8;
+  cursor: wait;
+}
+
 /* --- Stopka (Footer) --- */
 .site-footer {
   background-color: #F8FAFC;

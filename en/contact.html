@@ -183,29 +183,37 @@
         <!-- Prawa kolumna: Formularz kontaktowy -->
         <div class="form-card">
           <h3>Request a Quotation</h3>
-          <p>Fill out the form below — it will generate a prepared email inquiry for our engineering team.</p>
+          <p>Fill out the form below — your inquiry will be sent directly to our engineering office.</p>
 
-          <form id="contactForm">
+          <div id="formStatus" style="display: none;"></div>
+
+          <form id="contactForm" novalidate>
+            <!-- Web3Forms anti-spam & access key -->
+            <input type="hidden" name="access_key" id="w3fKey" value="">
+            <input type="checkbox" name="botcheck" tabindex="-1" style="display: none;">
             
             <div class="form-row">
               <div class="form-group">
                 <label for="cName" class="form-label">Full Name / Company Name *</label>
-                <input type="text" id="cName" class="form-input" placeholder="e.g. John Doe / ABC Engineering" required>
+                <input type="text" id="cName" name="name" class="form-input" placeholder="e.g. John Doe / ABC Engineering" required>
+                <span class="form-error-msg" id="cNameError" style="display: none;"></span>
               </div>
               <div class="form-group">
                 <label for="cPhone" class="form-label">Phone Number *</label>
-                <input type="tel" id="cPhone" class="form-input" placeholder="+48 500 000 000" required>
+                <input type="tel" id="cPhone" name="phone" class="form-input" placeholder="+48 500 000 000" required>
+                <span class="form-error-msg" id="cPhoneError" style="display: none;"></span>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label for="cEmail" class="form-label">Email Address *</label>
-                <input type="email" id="cEmail" class="form-input" placeholder="e.g. john@example.com" required>
+                <input type="email" id="cEmail" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+                <span class="form-error-msg" id="cEmailError" style="display: none;"></span>
               </div>
               <div class="form-group">
                 <label for="cService" class="form-label">Inquiry Scope / Topic</label>
-                <select id="cService" class="form-select">
+                <select id="cService" name="service" class="form-select">
                   <option value="Welding & Steel Structures (MIG/MAG & TIG)">Welding &amp; steel structures (MIG/MAG &amp; TIG)</option>
                   <option value="Airless Spray Painting & Blasting">Airless spray painting &amp; shot blasting</option>
                   <option value="Large CNC Machining & Cutting">Large-scale CNC machining &amp; plate cutting</option>
@@ -217,14 +225,15 @@
 
             <div class="form-group">
               <label for="cMessage" class="form-label">Message / Project Description *</label>
-              <textarea id="cMessage" class="form-textarea" placeholder="Briefly describe the structure, required dimensions, quantity, steel grade, or fabrication scope..." required></textarea>
+              <textarea id="cMessage" name="message" class="form-textarea" placeholder="Briefly describe the structure, required dimensions, quantity, steel grade, or fabrication scope..." required></textarea>
+              <span class="form-error-msg" id="cMessageError" style="display: none;"></span>
             </div>
 
             <div style="font-size: 0.8rem; color: #64748B; margin-bottom: 20px;">
               * Technical drawings (PDF, STEP, DXF, DWG) can also be emailed directly to: <strong>biuro@alynx.com.pl</strong>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <button type="submit" class="btn btn-primary" id="cSubmitBtn" style="width: 100%;">
               Send Inquiry for Quotation
             </button>
 
