@@ -283,10 +283,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
           </svg>
           <div>
-            <strong>${isEn ? 'Inquiry sent successfully!' : 'Wiadomość została wysłana!'}</strong><br>
+            <strong>${isEn ? 'Thank you for contacting us.' : 'Dziękujemy za kontakt.'}</strong><br>
             ${isEn 
-              ? 'Thank you for reaching out. Your inquiry has been sent directly to ALYNX Engineering. We will review your project and get back to you shortly.' 
-              : 'Dziękujemy za kontakt. Twoja wiadomość trafiła bezpośrednio do naszego biura inżynieryjnego. Odpowiemy najszybciej jak to możliwe.'}
+              ? 'Your message has been sent to our office. We will reply as soon as possible.' 
+              : 'Twoja wiadomość trafiła do naszego biura. Odpowiemy najszybciej jak to możliwe.'}
           </div>
         `;
         showStatus('success', successHtml);

@@ -87,7 +87,7 @@ $mail_sent = @mail($to, $subject, $email_body, implode("\r\n", $headers));
 if ($mail_sent) {
     echo json_encode([
         'success' => true,
-        'message' => 'Dziękujemy! Twoja wiadomość została pomyślnie wysłana bezpośrednio do biura ALYNX Engineering.'
+        'message' => 'Dziękujemy za kontakt. Twoja wiadomość trafiła do naszego biura. Odpowiemy najszybciej jak to możliwe.'
     ]);
 } else {
     http_response_code(500);
